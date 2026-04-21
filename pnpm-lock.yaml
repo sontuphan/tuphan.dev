@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@react-router/fs-routes':
+        specifier: ^7.14.2
+        version: 7.14.2(@react-router/dev@7.14.0(@react-router/serve@7.14.0(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3))(@types/node@22.19.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(sass@1.77.6)(terser@5.31.3)(tsx@4.16.2)(typescript@5.9.3)(vite@8.0.9(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(sass@1.77.6)(terser@5.31.3)(tsx@4.16.2)(yaml@2.4.5))(yaml@2.4.5))(typescript@5.9.3)
       '@react-router/node':
         specifier: 7.14.0
         version: 7.14.0(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)
@@ -572,6 +575,16 @@ packages:
       typescript:
         optional: true
 
+  '@react-router/fs-routes@7.14.2':
+    resolution: {integrity: sha512-dqkJZK8jOfH99Qab0TN6V1nWVtdh04PavjQbEgSJd1Gf7SQ+KnHsf8KPvfNIhNUOb9s13hxUTrNHHlgA2MJzIA==}
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      '@react-router/dev': ^7.14.2
+      typescript: ^5.1.0 || ^6.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   '@react-router/node@7.14.0':
     resolution: {integrity: sha512-ZxJJLE4PX29+cHLacH3pmCHMCJQz/1dpEgFQtm8Pst2IP5GI6897rShYylLZbJ7jRBJSkskHn+opSEh+o6mmOA==}
     engines: {node: '>=20.0.0'}
@@ -966,6 +979,9 @@ packages:
   babel-dead-code-elimination@1.0.12:
     resolution: {integrity: sha512-GERT7L2TiYcYDtYk1IpD+ASAYXjKbLTDPhBtYj7X1NuRMDTMtAx9kyBenub1Ev41lo91OHCKdmP+egTDmfQ7Ig==}
 
+  balanced-match@1.0.2:
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
   baseline-browser-mapping@2.10.20:
     resolution: {integrity: sha512-1AaXxEPfXT+GvTBJFuy4yXVHWJBXa4OdbIebGN/wX5DlsIkU0+wzGnd2lOzokSk51d5LUmqjgBLRLlypLUqInQ==}
     engines: {node: '>=6.0.0'}
@@ -982,6 +998,9 @@ packages:
   body-parser@1.20.4:
     resolution: {integrity: sha512-ZTgYYLMOXY9qKU/57FAo8F+HA2dGX7bqGc71txDRC1rS4frdFI5R7NhluHxH6M0YItAP0sHB4uqAOcYKxO6uGA==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
+
+  brace-expansion@2.1.0:
+    resolution: {integrity: sha512-TN1kCZAgdgweJhWWpgKYrQaMNHcDULHkWwQIspdtjV4Y5aurRdZpjAqn6yX3FPqTA9ngHCc4hJxMAMgGfve85w==}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -1415,6 +1434,10 @@ packages:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
     engines: {node: '>=4'}
     hasBin: true
+
+  minimatch@9.0.9:
+    resolution: {integrity: sha512-OBwBN9AL4dqmETlpS2zasx+vTeWclWzkblfZk7KTA5j3jeOONz/tRCnZomUyvNg83wL5Zv9Ss6HMJXAgL8R2Yg==}
+    engines: {node: '>=16 || 14 >=14.17'}
 
   morgan@1.10.1:
     resolution: {integrity: sha512-223dMRJtI/l25dJKWpgij2cMtywuG/WiUKXdvwfbhGKBhy1puASqXwFzmWZ7+K73vUPoR7SS2Qz2cI/g9MKw0A==}
@@ -2269,6 +2292,13 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
+  '@react-router/fs-routes@7.14.2(@react-router/dev@7.14.0(@react-router/serve@7.14.0(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3))(@types/node@22.19.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(sass@1.77.6)(terser@5.31.3)(tsx@4.16.2)(typescript@5.9.3)(vite@8.0.9(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(sass@1.77.6)(terser@5.31.3)(tsx@4.16.2)(yaml@2.4.5))(yaml@2.4.5))(typescript@5.9.3)':
+    dependencies:
+      '@react-router/dev': 7.14.0(@react-router/serve@7.14.0(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3))(@types/node@22.19.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(sass@1.77.6)(terser@5.31.3)(tsx@4.16.2)(typescript@5.9.3)(vite@8.0.9(@types/node@22.19.17)(esbuild@0.27.7)(jiti@2.6.1)(sass@1.77.6)(terser@5.31.3)(tsx@4.16.2)(yaml@2.4.5))(yaml@2.4.5)
+      minimatch: 9.0.9
+    optionalDependencies:
+      typescript: 5.9.3
+
   '@react-router/node@7.14.0(react-router@7.14.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5))(typescript@5.9.3)':
     dependencies:
       '@mjackson/node-fetch-server': 0.2.0
@@ -2538,6 +2568,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  balanced-match@1.0.2: {}
+
   baseline-browser-mapping@2.10.20: {}
 
   basic-auth@2.0.1:
@@ -2563,6 +2595,10 @@ snapshots:
       unpipe: 1.0.0
     transitivePeerDependencies:
       - supports-color
+
+  brace-expansion@2.1.0:
+    dependencies:
+      balanced-match: 1.0.2
 
   braces@3.0.3:
     dependencies:
@@ -2990,6 +3026,10 @@ snapshots:
       mime-db: 1.52.0
 
   mime@1.6.0: {}
+
+  minimatch@9.0.9:
+    dependencies:
+      brace-expansion: 2.1.0
 
   morgan@1.10.1:
     dependencies:
