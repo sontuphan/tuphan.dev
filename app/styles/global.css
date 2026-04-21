@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+@import './typography.css';
+@import './patch.css';
+
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui/index.js" {
+  themes: false;
+}
+
+@plugin "daisyui/theme" {
+  name: 'light';
+  default: true;
+  color-scheme: light;
+
+  --color-primary: #343433;
+  --color-primary-content: #ffffff;
+  --color-secondary: #b2a79a;
+  --color-secondary-content: #000000;
+
+  --color-accent: #6187fe;
+  --color-accent-content: #d4deff;
+  --color-neutral: #747485;
+  --color-neutral-content: #ffffff;
+
+  --color-info: #e9f2ff;
+  --color-info-content: #0086fc;
+  --color-success: #e3eee2;
+  --color-success-content: #00c454;
+  --color-error: #fff0f0;
+  --color-error-content: #ff4e4e;
+  --color-warning: #fefae6;
+  --color-warning-content: #f6c30f;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #fbfaf9;
+  --color-base-300: #f7f4f3;
+  --color-base-content: #474645;
+}
+
+@plugin "daisyui/theme" {
+  name: 'dark';
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-primary: #c6c2c3;
+  --color-primary-content: #000000;
+  --color-secondary: #57514b;
+  --color-secondary-content: #ffffff;
+
+  --color-accent: #6187fe;
+  --color-accent-content: #d4deff;
+  --color-neutral: #747485;
+  --color-neutral-content: #ffffff;
+
+  --color-info: #0086fc;
+  --color-info-content: #e9f2ff;
+  --color-success: #00c454;
+  --color-success-content: #e3eee2;
+  --color-error: #ff4e4e;
+  --color-error-content: #fff0f0;
+  --color-warning: #f6c30f;
+  --color-warning-content: #fefae6;
+
+  --color-base-100: #000000;
+  --color-base-200: #121212;
+  --color-base-300: #161616;
+  --color-base-content: #c6c3c0;
+}
+
+@theme {
+  --spacing-a4: 768px;
+
+  --font-satoshi: 'Satoshi', sans-serif;
+  --font-clash-display: 'Clash Display', sans-serif;
+
+  --animate-pop-in: pop-in 200ms cubic-bezier(0, 0, 0.2, 1);
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      transform: scaleX(0.95) scaleY(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(1) scaleY(1);
+    }
+  }
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  @variant md {
+    font-size: 16px;
+  }
+}
+
+body {
+  @apply bg-base-300/10;
+  main {
+    @apply relative z-0;
+  }
+}

@@ -1,5 +1,5 @@
-@import './fonts/satoshi/satoshi.scss';
-@import './fonts/clash-display/clash-display.scss';
+@import './fonts/satoshi/satoshi.css';
+@import './fonts/clash-display/clash-display.css';
 
 h1 {
   font-family: 'Satoshi', sans-serif;
