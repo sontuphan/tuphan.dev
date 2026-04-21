@@ -1,40 +1,22 @@
-FROM node:20.12.0-slim as base
-
-# ===============================
-# Builder
-# ===============================
-FROM base as builder
+FROM node:20-alpine AS development-dependencies-env
+COPY . /app
 WORKDIR /app
-# Install deps
-RUN npm install -g pnpm@9
-COPY package.json pnpm-lock.yaml ./
-RUN pnpm install --frozen-lockfile
-# Build source
-COPY . .
-RUN --mount=type=secret,id=NEXT_PUBLIC_HOST \
-    NEXT_PUBLIC_HOST="$(cat /run/secrets/NEXT_PUBLIC_HOST)" \
-    pnpm ci:build
-# Remove dev deps
-RUN pnpm prune --prod
+RUN npm ci
 
-# ===============================
-# Runner
-# ===============================
-FROM base as runner
+FROM node:20-alpine AS production-dependencies-env
+COPY ./package.json package-lock.json /app/
 WORKDIR /app
-ENV NODE_ENV production
-ENV PORT 3000
-ENV HOSTNAME 0.0.0.0
-# Get source
-RUN mkdir .next
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
-# Config workspace
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 tuphan
-RUN chown -R tuphan:nodejs /app
-USER tuphan
-EXPOSE 3000
-# Run server
-CMD node server.js
+RUN npm ci --omit=dev
+
+FROM node:20-alpine AS build-env
+COPY . /app/
+COPY --from=development-dependencies-env /app/node_modules /app/node_modules
+WORKDIR /app
+RUN npm run build
+
+FROM node:20-alpine
+COPY ./package.json package-lock.json /app/
+COPY --from=production-dependencies-env /app/node_modules /app/node_modules
+COPY --from=build-env /app/build /app/build
+WORKDIR /app
+CMD ["npm", "run", "start"]

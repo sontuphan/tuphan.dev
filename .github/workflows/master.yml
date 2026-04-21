@@ -2,7 +2,7 @@ name: Automatic Deployment
 
 on:
   push:
-    branches: master
+    branches: [master]
 
 jobs:
   deploy:
@@ -11,11 +11,3 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - name: Deploy to fly.io
-        run: |
-          flyctl deploy \
-            --build-secret NEXT_PUBLIC_HOST=${{ vars.NEXT_PUBLIC_HOST }} \
-            --remote-only
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
