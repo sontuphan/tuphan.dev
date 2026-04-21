@@ -10,7 +10,8 @@ import {
 
 import type { Route } from './+types/root'
 
-import '~/styles/global.css'
+import UiProvider from '~/providers/ui.provider'
+import Footer from '~/components/footer'
 
 export const links: Route.LinksFunction = () => [
   {
@@ -32,7 +33,7 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,7 +41,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <UiProvider>{children}</UiProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -49,7 +50,14 @@ export function Layout({ children }: { children: ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />
+  return (
+    <main className="w-full min-h-dvh flex flex-col">
+      <Outlet />
+      <footer className="fixed bottom-2 w-full flex flex-row justify-center">
+        <Footer />
+      </footer>
+    </main>
+  )
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
