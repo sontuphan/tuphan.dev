@@ -43,7 +43,7 @@ export const Dock = forwardRef<HTMLDivElement, DockProps>(function Dock(
       {...props}
       className={cn(
         clsx(
-          'w-max h-[48px] p-2 flex flex-row gap-3 rounded-full bg-base-100/60 backdrop-blur shadow-sm ring-2 ring-base-300/60',
+          'w-max h-12 p-2 flex flex-row gap-3 rounded-full bg-base-100/60 backdrop-blur shadow-sm ring-2 ring-base-300/60',
           className,
           {
             'items-start': direction === 'top',

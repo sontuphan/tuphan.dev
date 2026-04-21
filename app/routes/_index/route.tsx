@@ -75,23 +75,29 @@ export default function Page() {
           i&apos;m
         </motion.p>
         <div className="grow flex flex-col gap-2">
-          <Bullet i={1}>
+          <Bullet i={1}>A Blockchain Buidler.</Bullet>
+          <Bullet i={2}>A Cryptography Researcher.</Bullet>
+          <Bullet i={3}>
+            A Master of Business Administration at{' '}
             <Link
-              className="hover:underline"
+              className="underline"
+              to="https://www.iit.edu/stuart"
+              target="_blank"
+            >
+              Illinois Institute of Technology (IIT).
+            </Link>
+            .
+          </Bullet>
+          <Bullet i={4}>
+            A{' '}
+            <Link
+              className="underline"
               to="https://www.coursera.org/account/accomplishments/professional-cert/BJM4N6DQROMF"
               target="_blank"
             >
-              A Google-Certified Project Manager.
-            </Link>
-          </Bullet>
-          <Bullet i={2}>A Blockchain Buidler.</Bullet>
-          <Bullet i={3}>A Cryptography Researcher.</Bullet>
-          <Bullet i={4}>
-            Running{' '}
-            <Link className="underline" to="http://gears.bot" target="_blank">
-              gears.bot
-            </Link>
-            .
+              Google-Certified
+            </Link>{' '}
+            Project Manager.
           </Bullet>
           <Bullet i={5}>
             Founder of{' '}
