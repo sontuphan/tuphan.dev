@@ -1,10 +1,7 @@
-import { useEffect } from 'react'
-import { useNavigate } from 'react-router'
+import type { Route } from './+types/route'
 
-export default function Blog() {
-  const push = useNavigate()
+import { redirect } from 'react-router'
 
-  useEffect(() => {
-    push('/')
-  }, [push])
+export async function loader({ request: _ }: Route.LoaderArgs) {
+  throw redirect('/')
 }
