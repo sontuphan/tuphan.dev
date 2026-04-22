@@ -11,7 +11,7 @@ import { Play } from 'lucide-react'
 import { SiFacebook, SiX } from '@icons-pack/react-simple-icons'
 import Island from '@/components/island'
 
-const MotionLink = motion(Link)
+const MotionLink = motion.create(Link)
 
 function NavLink({ href }: { href: string }) {
   const { data: name = '#' } = useSWR(href, async (api: string) => {

@@ -6,6 +6,7 @@ import { Link } from 'react-router'
 import { SiGithub, SiX } from '@icons-pack/react-simple-icons'
 import { SquareUserRound } from 'lucide-react'
 import { Dock, DockIcon } from '~/components/dock'
+import Island from '~/components/insland'
 import Chill from './chill'
 import Theme from './theme'
 import Search from './search'
@@ -70,7 +71,9 @@ export default function Footer() {
       variants={{ open: { y: '0%' }, closed: { y: 'calc(100% + 0.5rem)' } }}
       transition={{ duration: 0.3 }}
     >
-      <Menu open={false} />
+      <Island>
+        <Menu open={false} />
+      </Island>
     </motion.div>
   )
 }

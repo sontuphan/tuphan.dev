@@ -28,6 +28,7 @@
     "react-medium-image-zoom": "^5.4.3",
     "react-player": "^3.4.0",
     "react-router": "7.14.0",
+    "remix-utils": "^9.3.1",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {

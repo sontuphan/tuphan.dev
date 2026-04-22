@@ -9,6 +9,28 @@ import Contributors from '~/components/contributors'
 import Schedule from '~/components/schedule'
 import Header from './header'
 
+// import type { Metadata } from 'next'
+// import { headers } from 'next/headers'
+// import { all } from '@/db'
+
+// export async function generateMetadata(): Promise<Metadata> {
+//   const pathname = (await headers()).get('x-forwarded-pathname') || ''
+//   const { title, image, description } =
+//     all.find(({ route }) => route === pathname) || {}
+//   const metadata = { title, description }
+//   if (image)
+//     Object.assign(metadata, {
+//       openGraph: {
+//         images: [
+//           {
+//             url: image,
+//           },
+//         ],
+//       },
+//     })
+//   return metadata
+// }
+
 function PrevBlog({ route }: { route?: string }) {
   // const { data: { parent } = {} } = useBlog(route)
   // const { data: { children: siblings = [] } = {} } = useBlog(parent)
@@ -144,7 +166,6 @@ export default function Blog() {
           <div id="suggestion" className="w-full grid grid-cols-12 gap-4">
             {[...routes].reverse().map((route) => (
               <div key={route} className="col-span-full">
-                <Link to={route}>{route}</Link>
                 {/* <BlogCard route={route} /> */}
               </div>
             ))}

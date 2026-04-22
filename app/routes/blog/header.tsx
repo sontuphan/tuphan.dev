@@ -9,8 +9,9 @@ import clsx from 'clsx'
 import { Link } from 'react-router'
 import { Play } from 'lucide-react'
 import { SiFacebook, SiX } from '@icons-pack/react-simple-icons'
+import Island from '~/components/insland'
 
-const MotionLink = motion(Link)
+const MotionLink = motion.create(Link)
 
 function NavLink({ to }: { to: string }) {
   // const { data: name = '#' } = useSWR(href, async (api: string) => {
@@ -96,8 +97,10 @@ export default function Header() {
         </ul>
       </div>
       <div className="w-full flex flex-row gap-2 justify-end py-3 border-y border-base-300">
-        <ClientFacebookShare />
-        <ClientTwitterShare />
+        <Island>
+          <ClientFacebookShare />
+          <ClientTwitterShare />
+        </Island>
         <span className="grow" />
         <motion.button
           className="btn btn-sm rounded-full"
