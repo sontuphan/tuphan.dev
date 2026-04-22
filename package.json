@@ -17,6 +17,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.20",
     "isbot": "^5.1.36",
     "lucide-react": "^1.8.0",
     "motion": "^12.38.0",
@@ -28,6 +29,7 @@
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@mdx-js/rollup": "^3.1.1",
     "@react-router/dev": "7.14.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.4",

@@ -1,6 +1,6 @@
 +++
 tags = "webdev, backend"
-date = "8 Septemebr, 2024"
+date = "8 September, 2024"
 +++
 
 # 10X Your JS Web Servers
