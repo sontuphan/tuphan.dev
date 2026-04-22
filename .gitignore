@@ -5,13 +5,14 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.pnpm-store
 
 # misc
 .DS_Store
 .vscode
 
 # react router
-/.react-router/
+/.react-router
 
 # testing
 /coverage

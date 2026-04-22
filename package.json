@@ -9,6 +9,7 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@egjs/react-view360": "4.0.0-beta.7",
     "@icons-pack/react-simple-icons": "^13.13.0",
     "@react-router/fs-routes": "^7.14.2",
     "@react-router/node": "7.14.0",
@@ -42,6 +43,7 @@
     "rehype-katex": "^7.0.1",
     "rehype-mdx-import-media": "^1.4.0",
     "rehype-slug": "^6.0.0",
+    "remark-frontmatter": "^5.0.0",
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "tailwindcss": "^4.2.4",
