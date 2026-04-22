@@ -1,5 +1,4 @@
 import type { Route } from './+types/route'
-
 import { Link } from 'react-router'
 import { motion } from 'motion/react'
 

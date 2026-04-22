@@ -1,12 +1,11 @@
 'use client'
 import { useMemo } from 'react'
-// import { useSelectedLayoutSegments } from 'next/navigation'
 import { motion, AnimatePresence } from 'motion/react'
 import clsx from 'clsx'
-// import useSWR from 'swr'
-// import ky from 'ky'
+import useSWR from 'swr'
+import ky from 'ky'
 
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router'
 import { Play } from 'lucide-react'
 import { SiFacebook, SiX } from '@icons-pack/react-simple-icons'
 import Island from '~/components/insland'
@@ -14,12 +13,12 @@ import Island from '~/components/insland'
 const MotionLink = motion.create(Link)
 
 function NavLink({ to }: { to: string }) {
-  // const { data: name = '#' } = useSWR(href, async (api: string) => {
-  //   if (api === '/') return 'Blog'
-  //   const data = await ky.get(`/api/${api}`).json<Blog | undefined>()
-  //   return data?.title || '#'
-  // })
-  const name = 'Name'
+  const { data: name = '#' } = useSWR(to, async (api: string) => {
+    if (api === '/') return 'Blog'
+    const data = await ky.get(`/api/${api}`).json<Blog | undefined>()
+    return data?.title || '#'
+  })
+
   return (
     <Link className="opacity-60" to={to}>
       {name}
@@ -64,18 +63,21 @@ function ClientTwitterShare({ className = '' }: { className?: string }) {
 }
 
 export default function Header() {
-  // const segments = useSelectedLayoutSegments()
-  // const routes = useMemo(
-  //   () => [
-  //     '/',
-  //     ...segments.map((segment, i, segments) =>
-  //       ['/blog', ...segments.slice(0, i), segment].join('/'),
-  //     ),
-  //   ],
-  //   [segments],
-  // )
+  const { pathname } = useLocation()
 
-  const routes = ['a', 'b', 'c']
+  const routes = useMemo(() => {
+    const segments = pathname
+      .replace(/^\/blog\/?/, '')
+      .split('/')
+      .filter(Boolean)
+
+    return [
+      '/',
+      ...segments.map((segment, i) =>
+        ['/blog', ...segments.slice(0, i), segment].join('/'),
+      ),
+    ]
+  }, [pathname])
 
   return (
     <div className="w-full flex flex-col gap-0">
