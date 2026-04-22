@@ -75,21 +75,19 @@ export default function Page() {
           i&apos;m
         </motion.p>
         <div className="grow flex flex-col gap-2">
-          <Bullet i={1}>A Blockchain Buidler.</Bullet>
-          <Bullet i={2}>A Cryptography Researcher.</Bullet>
-          <Bullet i={3}>
-            A Master of Business Administration at{' '}
+          <Bullet i={1}>A Blockchain Buidler & Cryptography Researcher.</Bullet>
+          <Bullet i={2}>
+            MBA at{' '}
             <Link
               className="underline"
               to="https://www.iit.edu/stuart"
               target="_blank"
             >
-              Illinois Institute of Technology (IIT).
+              Illinois Institute of Technology (IIT)
             </Link>
             .
           </Bullet>
-          <Bullet i={4}>
-            A{' '}
+          <Bullet i={3}>
             <Link
               className="underline"
               to="https://www.coursera.org/account/accomplishments/professional-cert/BJM4N6DQROMF"
@@ -99,7 +97,7 @@ export default function Page() {
             </Link>{' '}
             Project Manager.
           </Bullet>
-          <Bullet i={5}>
+          <Bullet i={4}>
             Founder of{' '}
             <Link
               className="underline"
@@ -118,7 +116,7 @@ export default function Page() {
             </Link>
             ).
           </Bullet>
-          <Bullet i={6}>
+          <Bullet i={5}>
             <Link
               className="underline"
               to="/static/Thank you Letter - Mr. Tu Phan.pdf"
@@ -128,7 +126,7 @@ export default function Page() {
             </Link>{' '}
             at Blockchain Application Projects, RMIT University.
           </Bullet>
-          <Bullet i={7}>
+          <Bullet i={6}>
             Vietnamese Translator of{' '}
             <Link
               className="underline"
@@ -139,7 +137,7 @@ export default function Page() {
             </Link>
             .
           </Bullet>
-          <Bullet i={8}>
+          <Bullet i={7}>
             Author of 50K+ views{' '}
             <Link
               className="underline"

@@ -51,7 +51,7 @@ export function Layout({ children }: { children: ReactNode }) {
 
 export default function App() {
   return (
-    <main className="w-full min-h-dvh flex flex-col">
+    <main className="w-full flex flex-col">
       <Outlet />
       <footer className="fixed bottom-2 w-full flex flex-row justify-center">
         <Footer />
