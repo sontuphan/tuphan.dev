@@ -1,0 +1,104 @@
+[
+  {
+    "route": "/blog",
+    "parent": "",
+    "title": "",
+    "image": "",
+    "authors": [],
+    "tags": [],
+    "description": "",
+    "content": "",
+    "date": "2026-04-23T02:59:52.740Z",
+    "children": [
+      "/blog/ngay-nang-he",
+      "/blog/explain-pow-consensus-in-my-way",
+      "/blog/cheatsheet-digital-signature-in-web3",
+      "/blog/canh-dieu-thang-6"
+    ]
+  },
+  {
+    "route": "/blog/ngay-nang-he",
+    "parent": "/blog",
+    "title": "Ngày nắng hè",
+    "image": "",
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
+    "tags": [
+      "tản văn",
+      "🇻🇳"
+    ],
+    "description": "Trích một đoạn trong \"Khói trời lộng lẫy\" của chị Tư (Nguyễn Ngọc Tư). Dù chị Tư sinh năm 1976, nghĩa là lớn hơn tôi tận 18 tuổi, nhưng gọi chị là chị vì văn chị trẻ dữ quá. Chị Tư viết sao giản dị mà lại thiệt tình và hay lắm.",
+    "content": "Ngày nắng hè Trích một đoạn trong \"Khói trời lộng lẫy\" của chị Tư (Nguyễn Ngọc Tư). Dù chị Tư sinh năm 1976, nghĩa là lớn hơn tôi tận 18 tuổi, nhưng gọi chị là chị vì văn chị trẻ dữ quá. Chị Tư viết sao giản dị mà lại thiệt tình và hay lắm. Tôi thấy mình nghèo quá, mình chỉ có tình thương. Tôi chỉ có thể hứa những lời hứa nghèo, chừng nào hái bí mẹ mua cho con bộ đồ mới, chừng nào con lớn mẹ sẽ cho đi chơi thành phố, chừng nào kiếm nhiều tiền mẹ mua chiếc xe đạp cho con chạy lòng vòng cồn chơi. Hoặc lời hứa mịt mù kiểu như \"nghe lời mẹ rồi mẹ thương…\". Bầu. Tháng 9 năm 2016. Đọc đoạn này tôi cứ miên man nhớ về ngày tháng bé xíu. Hình ảnh xóm Bầu hiện lên trong tôi vẫn luôn là những ngày nắng, gió lộng. Cũng có lẽ vì thế mà tôi lấy tựa \"Ngày nắng hè\" là thích hợp nhất cho những đoạn bình dị này. Nhà cũ. Tháng 9 năm 2016.",
+    "date": "2024-12-02T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/explain-pow-consensus-in-my-way",
+    "parent": "/blog",
+    "title": "Explain PoW Consensus In My Way",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3"
+    ],
+    "description": "The first time I read the definition of Proof-of-Work (PoW), it was explained as all nodes competitively solving a hash puzzle, but no one told me the reason behind it. Here's what I've figured out.",
+    "content": "Explain PoW Consensus In My Way The first time I read the definition of Proof-of-Work (PoW), it was explained as all nodes competitively solving a hash puzzle, but no one told me the reason behind it. Here's what I've figured out. Consensus is not originally a native definition in web3 In fact, the term of consensus was first introduced in Distributed Systems[^1] (i.e., database sharding, world clock synchronization, .etc), where multiple machines (also known as nodes) collaborate to perform tasks. To keep the process synchorized (a common strategy in blockchains), nodes need to appoint a leader somehow so that the leader can tell them when/how the collaboration should start. The simplest form of leader election is a random walk. Concretely, each nodes runs a random countdown, and the first node to reach the timeout gets to lead the current round of collaboration. [^1]: Different from Decentralized Systems. Conflict of Interest Regarding the random walk, it's commonly used in centralized systems where consensus doesn't create any conflicts of interest. It's simply about choosing a leader and completing tasks efficiently. On the other hand, in decentralized systems like blockchain, the leader who creates a new block can be significantly rewarded. If we were to reuse the random walk consensus in such systems, nodes could exploit it by falsely declaring themselves as the leader as soon as possible to claim the reward. Now, PoW starts to sound more resonable, as it can be seen as a steroid version of a random walk. It's probabilistically random to find the solution of a zero-leading hash problem, ensuring fairness and reducing the chances of exploitation.. *le satoshi: kkkkkkkkk",
+    "date": "2024-10-09T17:00:00.000Z",
+    "children": [
+      "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac"
+    ]
+  },
+  {
+    "route": "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac",
+    "parent": "/blog/explain-pow-consensus-in-my-way",
+    "title": "Giải Thích PoW Theo Một Hướng Khác",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "🇻🇳"
+    ],
+    "description": "Trong lần đầu khi đọc định nghĩa của Proof-of-Work (PoW), hầu hết các tài liệu chỉ nhắc tới việc các nốt phải tranh nhau tìm ra lời giải cho một câu đố chuỗi hash mà không hề nhắc gì đến lý do đằng sau. Vì vậy mình sẽ thử giải thích điều này một cách có lý luận hơn.",
+    "content": "Giải Thích PoW Theo Một Hướng Khác Trong lần đầu khi đọc định nghĩa của Proof-of-Work (PoW), hầu hết các tài liệu chỉ nhắc tới việc các nốt phải tranh nhau tìm ra lời giải cho một câu đố chuỗi hash mà không hề nhắc gì đến lý do đằng sau. Vì vậy mình sẽ thử giải thích điều này một cách có lý luận hơn. Consensus hay Luật đồng thuận không phải là từ gốc có nguồn trong web3 Thực tế, khái niệm luật đồng thuận lần đầu được giới thiệu ở các hệ thống phần tán[^1] (distributed systems) (ví dụ như sharding trong cơ sở dữ liệu, hay đồng bộ đồng hồ thế giới, ...), trong đó nhiều máy tính (hay nốt) cần hợp tác và thực thi các nhiệm vụ cụ thể. Để giữ cho tiến trình được đồng bộ (chiến lược phổ biến trong blockchain), các nốt cần bầu một trưởng nhóm bằng cách nay hay cách khác, từ đó trưởng nhóm sẽ cho biết khi nào và làm sao để quá trình hợp tác bắt đầu. Một dạng đơn giản nhất của bầu trưởng nhóm là dùng bộ đếm ngẫu nhiên. Cụ thể, mỗi nốt sẽ chạy một bộ đếm ngược ngẫu nhiên, nốt đầu tiên đếm đến 0 sẽ được chọn là trưởng nhóm cho vòng tính toán hiện thời. [^1]: Phân biệt với hệ thống phi tập trung, decentralized systems. Xung đột lợi ích Đối với bộ đếm ngược, nó có thể được dùng phổ biến trong các hệ thống tập trung nơi mà luật đồng thuận không tạo nên bất kì xung đột lợi ích nào. Nó chỉ đơn giản là chọn lựa một trưởng nhóm để hoàn thành các nhiệm vụ một các hiệu quả. Tuy nhiên, trong các hệ thống phi tập trung ví như blockchain, trưởng nhóm sẽ là người tạo ra block mới và được nhận một phần thưởng tương đối lớn. Nếu chúng ta vẫn sử sụng bộ đếm ngược trong các hệ thống như vậy, các nốt sẽ cố gắng khai thác việc báo giả bộ đếm để khiến họ trở thành trưởng nhóm và lãnh thưởng. Giờ thì PoW bắt đầu nghe có vẻ có lý khi nó \"ngờ ngợ\" như một phiên bản chích steroid của bộ đếm ngược. Thực vậy, để giải câu đố hash với số các 0 ở đầu là ngẫu nhiên về mặt xác suất từ đó đảm bảo tính công bằng và giảm thiểu khả năng bị lợi dụng. *le satoshi: kkkkkkkkk",
+    "date": "2024-10-09T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/cheatsheet-digital-signature-in-web3",
+    "parent": "/blog",
+    "title": "Cheatsheet: Digital Signature in Web3",
+    "image": "",
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
+    "tags": [
+      "cryptography",
+      "math"
+    ],
+    "description": "Digital signature algorithms are used to ensure the authenticity and integrity of digital messages or documents. Three popular digital signature algorithms are ECDSA, EdDSA, and BLS.",
+    "content": "Cheatsheet: Digital Signature in Web3 Digital signature algorithms are used to ensure the authenticity and integrity of digital messages or documents. Three popular digital signature algorithms are ECDSA, EdDSA, and BLS. Digital Signature from Zoho WorkDrive ECDSA is a widely used digital signature algorithm based on elliptic curve cryptography and widely adopted in well-known blockchains namely Bitcoin and Ethereum. Schnorr Signature (EdDSA) is another digital signature algorithm also based on elliptic curve. It is designed to be faster and more secure than ECDSA. Furthermore, Schnorr signature is more friendly to multi-party computing than ECDSA. BLS is a digital signature algorithm that uses bilinear pairings to achieve a more efficient and compact signature, which originally targets to zero-knowledge domains. ECDSA Key Generation For an $EC$ of order $n$ with a generator $G$, we can randomize a $Priv$. Based on the discrete logarithm on $EC$, $Pub = Priv*G$. Sign Randomize $r$ and open $R_x=[rG]_x$. With a hash function $H$, open the signature: $$ s = r^{-1}(H(m)+R_xPriv) $$ Verify Collect $(R_x,s)$ and verify the equation: $$ R_x \\overset{?}{=} [s^{-1}(H(m)G+R_xPub)]_x $$ Schnorr (EdDSA) Key Generation For an $EC$ of order $n$ with a generator $G$, we can randomize a $Priv$. Based on the discrete logarithm on $EC$, $Pub = Priv*G$. Sign Randomize $r$ and open $R=rG$. With a hash function $H$, open the signature: $$ s = r + H(R,Pub,m)Priv $$ Verify Collect $(R,s)$ and verify the equation: $$ R \\overset{?}{=} sG - H(R,Pub,m)Pub $$ BLS Key Generation For an $EC$ of $(\\mathbb{G},G)$, and a bilinear pairing function $e: \\mathbb{G} \\times \\mathbb{G} \\rightarrow \\mathbb{G}_T$, we can randomize the $Priv$. Based on the discrete logarithm on $\\mathbb{G}$, $Pub = Priv*G$. Sign With a hash-to-the-curve function $H$, open the signature: $$ s=PrivH(m) $$ Verify Collect $(s,m)$ and verify the equation: $$ e(s,G) \\overset{?}{=} e(Pub,H(m)) $$",
+    "date": "2024-08-12T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/canh-dieu-thang-6",
+    "parent": "/blog",
+    "title": "Cánh diều tháng 6",
+    "image": "",
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
+    "tags": [
+      "tản văn",
+      "🇻🇳"
+    ],
+    "description": "Tháng 6 về, những cánh đồng quê tôi đã gặt chỉ còn trơ gốc rạ, lũ chim sẻ ồn ào tranh nhau những hạt lúa còn sót lại dưới đất, cái bóng của đàn bò chầm chậm nhai rơm cứ dài dần theo nắng chiều nghiêng nghiêng.",
+    "content": "Cánh diều tháng 6 Tháng 6 về, những cánh đồng quê tôi đã gặt chỉ còn trơ gốc rạ, lũ chim sẻ ồn ào tranh nhau những hạt lúa còn sót lại dưới đất, cái bóng của đàn bò chầm chậm nhai rơm cứ dài dần theo nắng chiều nghiêng nghiêng. Từ bên \"soi\" nhìn về bến Bà Sáu Những ngày này 20 năm về trước, đó là cả một khoảng trời rộng mở đối với lũ trẻ xóm tôi khi chúng vừa kết thúc năm học, khép lại trang vở và bắt đầu những chuỗi ngày mênh mông trên cánh đồng vàng. Mặc dù cánh đồng lúa ôm trọn cả thôn xóm, nhưng đám trẻ dường như thích chơi thả diều và đá bóng ở khu vực phía cuối xóm hơn. Vì nơi đó có cái lò gạch cũ và trạm bơm hợp tác nên thường có chỗ để chúng ngồi lại ăn quả dâu ta, quả chim chim, hoặc dú dẻ khi chiều tàn. Cánh đồng xóm dưới cứ kéo mãi đến tận chân cầu sắt, tạo nên một khoảng không trải dài bất tận. Phía xa xa, đường chân trời dài đột nhiên bị cắt ngang bởi cột khói trắng của nhà máy đường. Dưới chân cầu sắt, sông Cái mùa hè hiền hoà cùng triền cát dài là nơi để đám trẻ tắm táp đùa nghịch trước khi về nhà trong tối mịt. Cứ đầu tháng 4 là ve bắt đầu kêu, nhưng râm ran nhất phải là tháng 6, tiếng ve ong ả kết hợp với cái nắng oi bức khiến cho mùa hè trở nên đặc biệt trong ký ức của chúng tôi. Tháng 6, phượng đỏ chót, lá cây xanh mượt, sen súng mọc đầy hồ, cứ như tháng 6 là lúc để mọi vật trở nên thắm đượm nhất trong cuộc đời. Tầm 5h chiều, một nhóm trẻ cầm diều chạy từ đầu xuống cuối xóm, những đứa trẻ khác dường như chỉ chờ có thế, chúng nhanh chóng ùa ra hoà vào tiếng bước chân lộp bộp trên đường cái, bụi tung mù mịt và không khí bắt đầu náo nức như hội hè. Đám thả diều, đám đá bóng, đám chơi u quạ, rượt bắt, ... trẻ con trong xóm ở đâu ra mà nhiều thế, chúng chạy nhảy, đùa nghịch vang một góc trời. Những người lớn đang đánh bò về đôi khi cũng ngoái nhìn chúng nó mà lòng cảm thấy nhẹ nhõm sau một ngày vất vả. Xóm Bầu Trời tối dần, chúng tôi càng nối dài cuộn chỉ để con diều bay thật cao, đến lúc nó chỉ còn là 1 vệt nhỏ trên bầu trời thì chúng tôi quyết định cắt đứt dây, trao tự do cho con diều. Nó bay đi đâu thì chúng tôi cũng không biết, có thể đã bay đến thông Long Hà hay rớt xuống sông Cái để trôi ra biển, chỉ biết rằng cánh diều giống vật chở mơ ước của những đứa trẻ trong xóm nghèo đi đến những nơi mà chúng chưa bao giờ đặt chân đến. Qua thời gian, cánh diều của tháng 6 càng ngày càng mờ nhạt dần khi nhiều thứ cuộc sống cứ chen chúc nhau mà lấp đầy trí nhớ, nhưng dù sao đi nữa thì nó vẫn mãi tồn tại ở đó, trên đầu đám trẻ đang đuổi bắt nhau giữa ánh chiều vàng. Có lẽ là Tí viết, chỉ biết ảnh được lưu lại vào 1/6/2021. Ảnh chụp màn hình bài Cánh diều tháng 6",
+    "date": "2021-05-31T17:00:00.000Z",
+    "children": []
+  }
+]

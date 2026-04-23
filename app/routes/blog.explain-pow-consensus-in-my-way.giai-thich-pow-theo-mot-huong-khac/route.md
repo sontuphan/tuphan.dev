@@ -23,4 +23,4 @@ Một dạng đơn giản nhất của bầu trưởng nhóm là dùng bộ đ�
 
 Giờ thì PoW bắt đầu nghe có vẻ có lý khi nó "ngờ ngợ" như một phiên bản chích steroid của bộ đếm ngược. Thực vậy, để giải [câu đố hash với số các 0 ở đầu](https://en.bitcoin.it/wiki/Proof_of_work) là ngẫu nhiên về mặt xác suất từ đó đảm bảo tính công bằng và giảm thiểu khả năng bị lợi dụng.
 
-![*le satoshi: kkkkkkkkk](../pow.jpg)
+![*le satoshi: kkkkkkkkk](../blog.explain-pow-consensus-in-my-way/pow.jpg)
