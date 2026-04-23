@@ -19,8 +19,6 @@ export default function Blogs() {
   const limit = 10
   const offset = blogs.length
 
-  console.log(limit, offset, tag)
-
   const onLoad = useCallback(async () => {
     const searchParams = new URLSearchParams({
       limit: String(limit),
@@ -28,7 +26,7 @@ export default function Blogs() {
     })
     if (tag) searchParams.set('t', tag)
 
-    const data = await ky.get('/api/blog', { searchParams }).json<string[]>()
+    const data = await ky.get('/api/blogs', { searchParams }).json<string[]>()
     return setData(({ blogs: [...blogs] }) => {
       data.forEach((item, i) => (blogs[offset + i] = item))
       return { disabled: data.length !== limit, blogs }
@@ -44,7 +42,7 @@ export default function Blogs() {
       {blogs.map((route, i) => (
         <motion.div
           key={route}
-          className="w-full"
+          className="col-span-full"
           initial={{ y: 8 * (i + 1), opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -52,7 +50,7 @@ export default function Blogs() {
           <BlogCard route={route} />
         </motion.div>
       ))}
-      <div className="w-full flex flex-col items-center justify-center">
+      <div className="col-span-full flex flex-col items-center justify-center">
         <p className={clsx('text-xs', { hidden: !disabled })}>
           <span className="opacity-25">You reached the bottom</span> 🎉
         </p>

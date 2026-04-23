@@ -64,15 +64,16 @@ export default function Footer() {
   useMotionValueEvent(scrollY, 'change', (y) => {
     setScroll(({ y: prev }) => ({ y, diff: y - prev }))
   })
+
   return (
     <motion.div
       initial="open"
       animate={scroll.diff > 0 ? 'closed' : 'open'}
-      variants={{ open: { y: '0%' }, closed: { y: 'calc(100% + 0.5rem)' } }}
+      variants={{ open: { y: '0%' }, closed: { y: 'calc(100% + 0.65rem)' } }}
       transition={{ duration: 0.3 }}
     >
       <Island>
-        <Menu open={false} />
+        <Menu open={true} />
       </Island>
     </motion.div>
   )

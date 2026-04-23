@@ -1,6 +1,6 @@
 import { type ImgHTMLAttributes, useMemo } from 'react'
 
-import Panorama from './panorama.client'
+import Panorama from './panorama'
 import Zoom from './zoom'
 
 export default function Image({

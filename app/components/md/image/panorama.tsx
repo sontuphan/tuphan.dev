@@ -1,9 +1,11 @@
 import { useMemo } from 'react'
 import clsx from 'clsx'
 
-import View360, { ControlBar, CylindricalProjection } from '@egjs/react-view360'
+import * as ReactView360 from '@egjs/react-view360'
 
 import '@egjs/react-view360/css/view360.min.css'
+
+const { default: View360, ControlBar, CylindricalProjection } = ReactView360
 
 type InternalProps = {
   src: string

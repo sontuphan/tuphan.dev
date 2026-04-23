@@ -1,9 +1,10 @@
-// import { usePathname } from 'next/navigation'
-import { Link, Outlet } from 'react-router'
+import { useMemo } from 'react'
+import { Link, Outlet, useLocation } from 'react-router'
 import clsx from 'clsx'
 
 import { ExternalLink } from 'lucide-react'
-// import { BlogCard, useBlog } from '@/components/blog'
+import { BlogCard, useBlog } from '~/components/blog'
+import Island from '~/components/insland'
 import Tags from '~/components/tags'
 import Contributors from '~/components/contributors'
 import Schedule from '~/components/schedule'
@@ -31,19 +32,16 @@ import Header from './header'
 //   return metadata
 // }
 
-function PrevBlog({ route: _route }: { route?: string }) {
-  // const { data: { parent } = {} } = useBlog(route)
-  // const { data: { children: siblings = [] } = {} } = useBlog(parent)
-  // const brother = useMemo(() => {
-  //   const index = siblings.findIndex((r) => r === route)
-  //   return siblings[index + 1]
-  // }, [route, siblings])
-  // const { data: { route: prev = '', title: left = '←' } = {} } = useBlog(
-  //   brother || (parent !== '/blog' ? parent : ''),
-  // )
-
-  const prev = '#'
-  const left = '←'
+function PrevBlog({ route }: { route?: string }) {
+  const { data: { parent } = {} } = useBlog(route)
+  const { data: { children: siblings = [] } = {} } = useBlog(parent)
+  const brother = useMemo(() => {
+    const index = siblings.findIndex((r) => r === route)
+    return siblings[index + 1]
+  }, [route, siblings])
+  const { data: { route: prev = '', title: left = '←' } = {} } = useBlog(
+    brother || (parent !== '/blog' ? parent : ''),
+  )
 
   return (
     <Link
@@ -63,25 +61,27 @@ function PrevBlog({ route: _route }: { route?: string }) {
   )
 }
 
-function NextBlog({ route: _route }: { route?: string }) {
-  // const { data: { parent, children = [] } = {} } = useBlog(route)
-  // const { data: { parent: grand, children: siblings = [] } = {} } =
-  //   useBlog(parent)
-  // const brother = useMemo(() => {
-  //   const index = siblings.findIndex((r) => r === route)
-  //   return siblings[index - 1]
-  // }, [route, siblings])
-  // const { data: { children: uncles = [] } = {} } = useBlog(grand)
-  // const uncle = useMemo(() => {
-  //   const index = uncles.findIndex((r) => r === parent)
-  //   return uncles[index - 1]
-  // }, [parent, uncles])
-  // const { data: { route: next = '', title: right = '→' } = {} } = useBlog(
-  //   children.at(-1) || brother || uncle,
-  // )
+function NextBlog({ route }: { route?: string }) {
+  const { data: { parent, children = [] } = {} } = useBlog(route)
 
-  const next = '#'
-  const right = '→'
+  const { data: { parent: grand, children: siblings = [] } = {} } =
+    useBlog(parent)
+
+  const brother = useMemo(() => {
+    const index = siblings.findIndex((r) => r === route)
+    return siblings[index - 1]
+  }, [route, siblings])
+
+  const { data: { children: uncles = [] } = {} } = useBlog(grand)
+
+  const uncle = useMemo(() => {
+    const index = uncles.findIndex((r) => r === parent)
+    return uncles[index - 1]
+  }, [parent, uncles])
+
+  const { data: { route: next = '', title: right = '→' } = {} } = useBlog(
+    children.at(-1) || brother || uncle,
+  )
 
   return (
     <Link
@@ -102,24 +102,18 @@ function NextBlog({ route: _route }: { route?: string }) {
 }
 
 export default function Blog() {
-  // const pathname = usePathname()
+  const { pathname } = useLocation()
 
-  // const {
-  //   data: {
-  //     route = '',
-  //     authors = [],
-  //     tags = [],
-  //     children: routes = [],
-  //     date,
-  //   } = {},
-  //   isLoading,
-  // } = useBlog(pathname)
-
-  const date = new Date()
-  const isLoading = false
-  const tags = ['dev', 'mba']
-  const authors = ['Tu Phan']
-  const routes = ['/blog/canh-dieu-thang-6']
+  const {
+    data: {
+      route = '',
+      authors = [],
+      tags = [],
+      children: routes = [],
+      date,
+    } = {},
+    isLoading,
+  } = useBlog(pathname)
 
   return (
     <div className="w-full flex flex-row justify-center">
@@ -134,7 +128,9 @@ export default function Blog() {
                 <Tags value={tags} />
                 <Contributors authors={authors} date={date} />
               </div>
-              <Outlet />
+              <Island>
+                <Outlet />
+              </Island>
             </Schedule>
           </article>
           <div
@@ -157,16 +153,16 @@ export default function Blog() {
           </div>
           <div id="prev-next" className="w-full grid grid-cols-2 gap-4">
             <div className="col-span-1">
-              <PrevBlog route={''} />
+              <PrevBlog route={route} />
             </div>
             <div className="col-span-1">
-              <NextBlog route={''} />
+              <NextBlog route={route} />
             </div>
           </div>
           <div id="suggestion" className="w-full grid grid-cols-12 gap-4">
             {[...routes].reverse().map((route) => (
               <div key={route} className="col-span-full">
-                {/* <BlogCard route={route} /> */}
+                <BlogCard route={route} />
               </div>
             ))}
           </div>
