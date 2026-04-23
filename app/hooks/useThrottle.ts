@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useDebounce } from 'react-use'
-import isEqual from 'react-fast-compare'
+import { deepEqual } from 'fast-equals'
 
 /**
  * To delay the i/o value
@@ -13,7 +13,7 @@ export function useThrottle<T>(value: T, ms: number = 500): T | undefined {
   const [, cancel] = useDebounce(
     () => {
       setDebounce((prev) => {
-        if (isEqual(prev, value)) return prev
+        if (deepEqual(prev, value)) return prev
         return value
       })
     },

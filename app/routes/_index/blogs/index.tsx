@@ -1,16 +1,15 @@
-'use client'
 import { useCallback, useEffect, useState } from 'react'
 import ky from 'ky'
 import { motion } from 'motion/react'
 import clsx from 'clsx'
 
-import { BlogCard } from '@/components/blog'
-import InfiniteLoading from '@/components/infiniteLoading'
+import { BlogCard } from '~/components/blog'
+import InfiniteLoading from '~/components/infiniteLoading'
 
-import { useSwitchSignal } from '@/lib/hooks/useSignal'
-import { useTag } from '@/lib/hooks/useTag'
+import { useSwitchSignal } from '~/hooks/useSignal'
+import { useTag } from '~/hooks/useTag'
 
-export default function BlogList() {
+export default function Blogs() {
   const tag = useTag()
   const reset = useSwitchSignal(tag)
   const [{ disabled, blogs }, setData] = useState<{
@@ -43,7 +42,7 @@ export default function BlogList() {
   }, [reset])
 
   return (
-    <>
+    <div className="w-full max-w-a4 p-6 grid grid-cols-12 gap-0">
       {blogs.map((route, i) => (
         <motion.div
           key={route}
@@ -61,6 +60,6 @@ export default function BlogList() {
         </p>
         <InfiniteLoading onLoad={onLoad} disabled={disabled} />
       </div>
-    </>
+    </div>
   )
 }

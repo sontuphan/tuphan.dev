@@ -15,6 +15,9 @@ export default defineConfig({
   build: {
     manifest: true,
   },
+  ssr: {
+    noExternal: ['react-use'],
+  },
   plugins: [
     mdx({
       providerImportSource: '~/components/md',

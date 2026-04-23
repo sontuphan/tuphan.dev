@@ -11,7 +11,7 @@ import { SearchIcon } from 'lucide-react'
 // import { LiteBlogCard } from '@/components/blog'
 // import Tags from '@/components/tags'
 
-import { isMac } from '~/lib/utils'
+import { isMac } from '~/hooks/utils'
 // import { useThrottle } from '@/lib/hooks/useThrottle'
 
 export function Kbd() {

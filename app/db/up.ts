@@ -10,7 +10,7 @@ import toml from 'toml'
 import { z } from 'zod'
 import lunr from 'lunr'
 
-import { isURL } from '~/lib/utils'
+import { isURL } from '~/hooks/utils'
 import type { BlogTreeNode } from '~/db'
 
 type ExtendedBlogTreeNode = Omit<BlogTreeNode, 'children'> & {
