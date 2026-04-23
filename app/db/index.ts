@@ -28,6 +28,7 @@ export function ejectBlogTree(routes: RouteConfigEntry[]) {
     }
   }
 
-  const blogTree = build(blog)
-  writeFileSync(TREE_DIR, JSON.stringify(blogTree, null, 2))
+  const tree = build(blog)
+
+  return writeFileSync(TREE_DIR, JSON.stringify(tree, null, 2))
 }
