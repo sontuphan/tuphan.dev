@@ -4,7 +4,7 @@ import clsx from 'clsx'
 
 import { ExternalLink } from 'lucide-react'
 import { BlogCard, useBlog } from '~/components/blog'
-import Island from '~/components/insland'
+import Island from '~/components/island'
 import Tags from '~/components/tags'
 import Contributors from '~/components/contributors'
 import Schedule from '~/components/schedule'

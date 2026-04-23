@@ -2,7 +2,7 @@ import type { ComponentProps } from 'react'
 import { Link } from 'react-router'
 import { motion } from 'motion/react'
 
-import Island from '~/components/insland'
+import Island from '~/components/island'
 
 const AtomicAnimatedLink = motion.create(Link)
 

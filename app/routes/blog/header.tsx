@@ -7,7 +7,7 @@ import ky from 'ky'
 import { Link, useLocation } from 'react-router'
 import { Play } from 'lucide-react'
 import { SiFacebook, SiX } from '@icons-pack/react-simple-icons'
-import Island from '~/components/insland'
+import Island from '~/components/island'
 
 const MotionLink = motion.create(Link)
 

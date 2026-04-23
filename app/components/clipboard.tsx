@@ -4,7 +4,7 @@ import clsx from 'clsx'
 
 import { Check, Copy } from 'lucide-react'
 
-import { delay } from '@/lib/utils'
+import { delay } from '~/hooks/utils'
 
 export type ClipboardProps = {
   content: string

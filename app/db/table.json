@@ -8,10 +8,11 @@
     "tags": [],
     "description": "",
     "content": "",
-    "date": "2026-04-23T15:10:37.245Z",
+    "date": "2026-04-23T15:30:51.590Z",
     "children": [
       "/blog/ngay-nang-he",
       "/blog/explain-pow-consensus-in-my-way",
+      "/blog/10x-your-js-web-servers",
       "/blog/cheatsheet-digital-signature-in-web3",
       "/blog/canh-dieu-thang-6"
     ]
@@ -68,6 +69,21 @@
     "description": "Trong lần đầu khi đọc định nghĩa của Proof-of-Work (PoW), hầu hết các tài liệu chỉ nhắc tới việc các nốt phải tranh nhau tìm ra lời giải cho một câu đố chuỗi hash mà không hề nhắc gì đến lý do đằng sau. Vì vậy mình sẽ thử giải thích điều này một cách có lý luận hơn.",
     "content": "Giải Thích PoW Theo Một Hướng Khác Trong lần đầu khi đọc định nghĩa của Proof-of-Work (PoW), hầu hết các tài liệu chỉ nhắc tới việc các nốt phải tranh nhau tìm ra lời giải cho một câu đố chuỗi hash mà không hề nhắc gì đến lý do đằng sau. Vì vậy mình sẽ thử giải thích điều này một cách có lý luận hơn. Consensus hay Luật đồng thuận không phải là từ gốc có nguồn trong web3 Thực tế, khái niệm luật đồng thuận lần đầu được giới thiệu ở các hệ thống phần tán[^1] (distributed systems) (ví dụ như sharding trong cơ sở dữ liệu, hay đồng bộ đồng hồ thế giới, ...), trong đó nhiều máy tính (hay nốt) cần hợp tác và thực thi các nhiệm vụ cụ thể. Để giữ cho tiến trình được đồng bộ (chiến lược phổ biến trong blockchain), các nốt cần bầu một trưởng nhóm bằng cách nay hay cách khác, từ đó trưởng nhóm sẽ cho biết khi nào và làm sao để quá trình hợp tác bắt đầu. Một dạng đơn giản nhất của bầu trưởng nhóm là dùng bộ đếm ngẫu nhiên. Cụ thể, mỗi nốt sẽ chạy một bộ đếm ngược ngẫu nhiên, nốt đầu tiên đếm đến 0 sẽ được chọn là trưởng nhóm cho vòng tính toán hiện thời. [^1]: Phân biệt với hệ thống phi tập trung, decentralized systems. Xung đột lợi ích Đối với bộ đếm ngược, nó có thể được dùng phổ biến trong các hệ thống tập trung nơi mà luật đồng thuận không tạo nên bất kì xung đột lợi ích nào. Nó chỉ đơn giản là chọn lựa một trưởng nhóm để hoàn thành các nhiệm vụ một các hiệu quả. Tuy nhiên, trong các hệ thống phi tập trung ví như blockchain, trưởng nhóm sẽ là người tạo ra block mới và được nhận một phần thưởng tương đối lớn. Nếu chúng ta vẫn sử sụng bộ đếm ngược trong các hệ thống như vậy, các nốt sẽ cố gắng khai thác việc báo giả bộ đếm để khiến họ trở thành trưởng nhóm và lãnh thưởng. Giờ thì PoW bắt đầu nghe có vẻ có lý khi nó \"ngờ ngợ\" như một phiên bản chích steroid của bộ đếm ngược. Thực vậy, để giải câu đố hash với số các 0 ở đầu là ngẫu nhiên về mặt xác suất từ đó đảm bảo tính công bằng và giảm thiểu khả năng bị lợi dụng. *le satoshi: kkkkkkkkk",
     "date": "2024-10-09T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/10x-your-js-web-servers",
+    "parent": "/blog",
+    "title": "10X Your JS Web Servers",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "webdev",
+      "backend"
+    ],
+    "description": "Javascript is single threaded that means if you was running your ExpressJS (or NestJS, HonoJS, etc.), you probably run it on a single core. To take advantages of multiprocessing, you can clusterize your web services by a native package in NodeJS.",
+    "content": "10X Your JS Web Servers Javascript is single threaded that means if you was running your ExpressJS (or NestJS, HonoJS, etc.), you probably run it on a single core. To take advantages of multiprocessing, you can clusterize your web services by a native package in NodeJS. To quickly test the demo, have a look at tuphan-dn/clusterized-express. A \"documented\" way to run ExpressJS servers The script basically run a signle thread of the Express server on port 3000. A \"clusterized\" way to run Express servers Benchmark In this benchmark, I will run autocannon -c 10000 -d 10 http://localhost:3000 (estimately 1000req/sec) to both approaches on a Macbook M2 Pro with 16GB RAM. Single core | Stat    | 2.5%   | 50%    | 97.5%   | 99%     | Avg       | Stdev      | Max     | | ------- | ------ | ------ | ------- | ------- | --------- | ---------- | ------- | | Latency | 208 ms | 532 ms | 4234 ms | 5610 ms | 996.34 ms | 1146.18 ms | 9099 ms | | Stat      | 1%     | 2.5%   | 50%    | 97.5%   | Avg     | Stdev    | Min    | | --------- | ------ | ------ | ------ | ------- | ------- | -------- | ------ | | Req/Sec   | 1,123  | 1,123  | 1,427  | 9,407   | 2,601.2 | 2,386.69 | 1,123  | | Bytes/Sec | 269 kB | 269 kB | 341 kB | 2.25 MB | 621 kB  | 570 kB   | 268 kB | Multiple cores | Stat    | 2.5%  | 50%   | 97.5%   | 99%     | Avg       | Stdev      | Max     | | ------- | ----- | ----- | ------- | ------- | --------- | ---------- | ------- | | Latency | 72 ms | 93 ms | 4362 ms | 5615 ms | 580.59 ms | 1088.17 ms | 7710 ms | | Stat      | 1%     | 2.5%   | 50%    | 97.5%   | Avg     | Stdev     | Min    | | --------- | ------ | ------ | ------ | ------- | ------- | --------- | ------ | | Req/Sec   | 1,676  | 1,676  | 3,453  | 51,615  | 8,838   | 15,203.85 | 1,676  | | Bytes/Sec | 401 kB | 401 kB | 825 kB | 12.3 MB | 2.11 MB | 3.63 MB   | 401 kB | Comparison",
+    "date": "2024-09-07T17:00:00.000Z",
     "children": []
   },
   {

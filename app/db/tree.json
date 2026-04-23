@@ -19,6 +19,11 @@
       ]
     },
     {
+      "path": "/blog/10x-your-js-web-servers",
+      "file": "app/routes/blog.10x-your-js-web-servers/route.md",
+      "children": []
+    },
+    {
       "path": "/blog/canh-dieu-thang-6",
       "file": "app/routes/blog.canh-dieu-thang-6/route.md",
       "children": []

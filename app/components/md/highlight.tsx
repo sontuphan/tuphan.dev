@@ -1,15 +1,14 @@
-'use client'
 import {
-  DetailedHTMLProps,
-  HTMLAttributes,
+  type DetailedHTMLProps,
+  type HTMLAttributes,
   useEffect,
   type ReactNode,
 } from 'react'
 import clsx from 'clsx'
 import mermaid from 'mermaid'
 
-import Clipboard from '@/components/clipboard'
-import Island from '@/components/island'
+import Clipboard from '~/components/clipboard'
+import Island from '~/components/island'
 
 declare module 'react' {
   interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {

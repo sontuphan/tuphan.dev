@@ -1,6 +1,6 @@
 import type { Route } from './+types/route'
 
-import Island from '~/components/insland'
+import Island from '~/components/island'
 import Landing from './landing'
 import Blogs from './blogs'
 import TagList from './taglist'
