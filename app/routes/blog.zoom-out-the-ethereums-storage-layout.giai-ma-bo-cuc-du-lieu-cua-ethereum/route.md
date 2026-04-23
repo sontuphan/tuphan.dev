@@ -42,7 +42,7 @@ Ngoài ra, dữ liệu của `data[4][9].a` sẽ đặt tại $x$ và dữ liệ
 
 Tất cả những kiến thức trên thực sự không cần quá để tâm. Điều chúng ta cần lưu ý ở đây là dữ liệu của contract được hình thành dưới dạng một dải các ô nhớ 32 bytes. Trong đó, $key$ sẽ là một số nguyên 32 bytes và $value$ sẽ mà một số nguyên 32 bytes với [Mã hoá RLP](https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/).
 
-![Contract's Storage Layout](../contracts-storage-layout.jpg)
+![Contract's Storage Layout](../blog.zoom-out-the-ethereums-storage-layout/contracts-storage-layout.jpg)
 
 ---
 
@@ -50,7 +50,7 @@ Tất cả những kiến thức trên thực sự không cần quá để tâm.
 
 Một Account State[^1] bao gồm $nonce$, $balance$, $storageRoot$, và $codeHash$. Tập trung vào $storageRoot$, nó chính là giá trị hash gốc của [Cây Merkle Patricia](https://ethereum.org/en/developers/docs/data-structures-and-encoding/patricia-merkle-trie/) (MPT). Như chúng ta biết rằng với một cặp $(key,value)$, $key$ sẽ đại diện cho đường dẫn đến node lá và $value$ sẽ chính là nội dung của node lá. Kết hợp hiểu biết này với [Bộ nhớ của Contract](#bộ-nhớ-của-contract), một storage slot vị thứ `p` với giá trị `value` sẽ được mã hoá thành cặp $(keccak256(p), RLP(value))$ trước khi thêm vào cây MPT.
 
-![Account State](../account-state.jpg)
+![Account State](../blog.zoom-out-the-ethereums-storage-layout/account-state.jpg)
 
 ---
 
@@ -74,7 +74,7 @@ $$
 
 Tất cả các tài khoản trên thế giới sẽ được tổ chức vào trong một cây MPT và cuối cùng cho ra một $stateRoot$.
 
-![World State](../world-state.jpg)
+![World State](../blog.zoom-out-the-ethereums-storage-layout/world-state.jpg)
 
 > Ngoài ra, còn có thêm 2 cây nữa là Transaction Trie, và Transaction Receipt Trie, mà tôi tin rằng chúng được cấu tạo với mô hình tường tự như World State Trie.
 
@@ -84,7 +84,7 @@ Tất cả các tài khoản trên thế giới sẽ được tổ chức vào t
 
 Đưa giá trị của [World State](#world-state) cùng với một số giá trị khác vào trong một block header[^1].
 
-![Block Header](../block-header.jpg)
+![Block Header](../blog.zoom-out-the-ethereums-storage-layout/block-header.jpg)
 
 ---
 
@@ -119,5 +119,7 @@ $$
 $$
 
 [^1]: Từ này sẽ được giữ nguyên gốc như là một danh từ thay vì dịch ra nghĩa Tiếng Việt.
+
 [^2]: trực tiếp = on-chain.
+
 [^3]: gián tiếp = offchain.

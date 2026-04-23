@@ -3,8 +3,64 @@
   "file": "app/routes/blog/route.tsx",
   "children": [
     {
+      "path": "/blog/fast-fourier-transform-in-efficient-polynomial-multiplication",
+      "file": "app/routes/blog.fast-fourier-transform-in-efficient-polynomial-multiplication/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/leveraging-dutch-auctions-for-efficient-onchain-market",
+      "file": "app/routes/blog.leveraging-dutch-auctions-for-efficient-onchain-market/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/contract-factory-the-solidity-pattern-and-facts",
+      "file": "app/routes/blog.contract-factory-the-solidity-pattern-and-facts/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/merkle-trie-the-definition-and-applications",
+      "file": "app/routes/blog.merkle-trie-the-definition-and-applications/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/chiec-be-cua-bam-chap-thay-thich-minh-tue",
+      "file": "app/routes/blog.chiec-be-cua-bam-chap-thay-thich-minh-tue/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/zoom-out-the-ethereums-storage-layout",
+      "file": "app/routes/blog.zoom-out-the-ethereums-storage-layout/route.md",
+      "children": [
+        {
+          "path": "/blog/zoom-out-the-ethereums-storage-layout/giai-ma-bo-cuc-du-lieu-cua-ethereum",
+          "file": "app/routes/blog.zoom-out-the-ethereums-storage-layout.giai-ma-bo-cuc-du-lieu-cua-ethereum/route.md",
+          "children": []
+        }
+      ]
+    },
+    {
       "path": "/blog/cheatsheet-digital-signature-in-web3",
       "file": "app/routes/blog.cheatsheet-digital-signature-in-web3/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/block-based-shamir-secret-sharing",
+      "file": "app/routes/blog.block-based-shamir-secret-sharing/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/common-pitfalls-for-web3-founders",
+      "file": "app/routes/blog.common-pitfalls-for-web3-founders/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/debug-a-smartcontract-in-hardhat",
+      "file": "app/routes/blog.debug-a-smartcontract-in-hardhat/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/account-abstraction-in-nutshell",
+      "file": "app/routes/blog.account-abstraction-in-nutshell/route.md",
       "children": []
     },
     {
@@ -19,8 +75,69 @@
       ]
     },
     {
+      "path": "/blog/permutation-argument-in-plonk",
+      "file": "app/routes/blog.permutation-argument-in-plonk/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/how-to-export-abi-in-hardhat",
+      "file": "app/routes/blog.how-to-export-abi-in-hardhat/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/schnorrs-protocol-cheatsheet",
+      "file": "app/routes/blog.schnorrs-protocol-cheatsheet/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/data-availability-de-lam-gi",
+      "file": "app/routes/blog.data-availability-de-lam-gi/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/good-writing-by-paul-graham",
+      "file": "app/routes/blog.good-writing-by-paul-graham/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/a-tidy-role-model-in-scrum",
+      "file": "app/routes/blog.a-tidy-role-model-in-scrum/route.md",
+      "children": [
+        {
+          "path": "/blog/a-tidy-role-model-in-scrum/khung-nhan-su-don-gian-cho-scrum",
+          "file": "app/routes/blog.a-tidy-role-model-in-scrum.khung-nhan-su-don-gian-cho-scrum/route.md",
+          "children": []
+        }
+      ]
+    },
+    {
       "path": "/blog/10x-your-js-web-servers",
       "file": "app/routes/blog.10x-your-js-web-servers/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/chuyen-messi-roi-barca",
+      "file": "app/routes/blog.chuyen-messi-roi-barca/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/rust-traits-cheatsheet",
+      "file": "app/routes/blog.rust-traits-cheatsheet/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/buc-thu-tinh-dau-tien",
+      "file": "app/routes/blog.buc-thu-tinh-dau-tien/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/the-groth16-intuition",
+      "file": "app/routes/blog.the-groth16-intuition/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/bai-toan-nha-ty-phu",
+      "file": "app/routes/blog.bai-toan-nha-ty-phu/route.md",
       "children": []
     },
     {
@@ -29,8 +146,28 @@
       "children": []
     },
     {
+      "path": "/blog/wrapped-viction",
+      "file": "app/routes/blog.wrapped-viction/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/chuyen-cat-toc",
+      "file": "app/routes/blog.chuyen-cat-toc/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/nho-lam-la-hai",
+      "file": "app/routes/blog.nho-lam-la-hai/route.md",
+      "children": []
+    },
+    {
       "path": "/blog/ngay-nang-he",
       "file": "app/routes/blog.ngay-nang-he/route.md",
+      "children": []
+    },
+    {
+      "path": "/blog/dao-duc-1",
+      "file": "app/routes/blog.dao-duc-1/route.md",
       "children": []
     }
   ]

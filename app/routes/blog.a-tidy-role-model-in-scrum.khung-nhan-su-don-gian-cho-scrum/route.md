@@ -9,7 +9,7 @@ _Scrum là một phương pháp agile trong phát triển phần mềm. Trong b�
 
 > Các chức danh nhân sự được xem như danh từ, vì thế tác giả sẽ không dịch các chức danh này sang từ Tiếng Việt tương ứng.
 
-![Scrum Process](../scrum-process.jpg)
+![Scrum Process](../blog.a-tidy-role-model-in-scrum/scrum-process.jpg)
 
 ## Product Owner (PO)
 
