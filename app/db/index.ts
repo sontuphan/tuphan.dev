@@ -1,34 +1,41 @@
-import type { RouteConfigEntry } from '@react-router/dev/routes'
-import { writeFileSync } from 'fs'
+import { z } from 'zod'
 
-export const TREE_DIR = 'app/db/tree.json'
+import { env } from '~/configs/env'
+import tablejson from './table.json'
+import indexjson from './index.json'
 
-export type BlogTreeNode = {
-  path: string
-  file: string
-  children: BlogTreeNode[]
-}
+// Database
+const TableDto: z.ZodType<Blog[]> = z.array(
+  z.object({
+    route: z.string(),
+    title: z.string(),
+    authors: z.array(z.string()),
+    image: z.string(),
+    tags: z.array(z.string()),
+    description: z.string(),
+    content: z.string(),
+    date: z.coerce.date(),
+    children: z.array(z.string()),
+    parent: z.string(),
+  }),
+)
+export const all = TableDto.parse(tablejson)
+const unpublished = all
+  .filter(({ date }) => env !== 'development' && date > new Date())
+  .map(({ route }) => route)
+export const published = all
+  .filter(({ route }) => !unpublished.includes(route))
+  .map(({ children, ...props }) => ({
+    children: children.filter((route) => !unpublished.includes(route)),
+    ...props,
+  }))
 
-export function ejectBlogTree(routes: RouteConfigEntry[]) {
-  const [blog] = routes.filter(({ path }) => path === 'blog')
-
-  const build = (
-    { path, file, children = [] }: RouteConfigEntry,
-    parentPath = '',
-  ): BlogTreeNode => {
-    const fullPath = [parentPath, path].join('/')
-
-    return {
-      path: fullPath,
-      file: `app/${file}`,
-      children:
-        children
-          .filter(({ index }) => !index)
-          .map((child) => build(child, fullPath)) ?? [],
-    }
-  }
-
-  const tree = build(blog)
-
-  return writeFileSync(TREE_DIR, JSON.stringify(tree, null, 2))
-}
+// Index
+const IndexDto = z.object({
+  version: z.string(),
+  fields: z.array(z.string()),
+  fieldVectors: z.array(z.tuple([z.string(), z.array(z.number())])),
+  invertedIndex: z.array(z.tuple([z.string(), z.any()])),
+  pipeline: z.array(z.string()),
+})
+export const index = IndexDto.parse(indexjson)

@@ -1,10 +1,8 @@
-import Island from '~/components/insland'
 import type { Route } from './+types/route'
 
+import Island from '~/components/insland'
 import Landing from './landing'
 import Blogs from './blogs'
-
-import db from '~/db/table.json'
 
 export function meta(_args: Route.MetaArgs) {
   return [
@@ -17,15 +15,7 @@ export function meta(_args: Route.MetaArgs) {
   ]
 }
 
-export async function loader({ params: _ }: Route.LoaderArgs) {
-  const [root] = db.filter(({ route }) => route === '/blog')
-  return root
-}
-
-export default function Home({
-  loaderData: { children },
-}: Route.ComponentProps) {
-  console.log(children)
+export default function Home() {
   return (
     <div className="w-full">
       <Landing />

@@ -1,3 +1,4 @@
+import type { RouteConfigEntry } from '@react-router/dev/routes'
 import fs, { readFileSync, writeFileSync } from 'fs'
 import { dirname, relative, parse, resolve } from 'path'
 import { log } from 'isomorphic-git'
@@ -10,8 +11,51 @@ import toml from 'toml'
 import { z } from 'zod'
 import lunr from 'lunr'
 
-import { isURL } from '~/hooks/utils'
-import type { BlogTreeNode } from '~/db'
+const TREE_DIR = 'app/db/tree.json'
+const TABLE_DIR = 'app/db/table.json'
+const INDEX_DIR = 'app/db/index.json'
+
+/**
+ * Check url
+ * @returns MacOS or not
+ */
+function isURL(url: string): boolean {
+  try {
+    return !!new URL(url)
+  } catch {
+    return false
+  }
+}
+
+type BlogTreeNode = {
+  path: string
+  file: string
+  children: BlogTreeNode[]
+}
+
+export function ejectBlogTree(routes: RouteConfigEntry[]) {
+  const [blog] = routes.filter(({ path }) => path === 'blog')
+
+  const build = (
+    { path, file, children = [] }: RouteConfigEntry,
+    parentPath = '',
+  ): BlogTreeNode => {
+    const fullPath = [parentPath, path].join('/')
+
+    return {
+      path: fullPath,
+      file: `app/${file}`,
+      children:
+        children
+          .filter(({ index }) => !index)
+          .map((child) => build(child, fullPath)) ?? [],
+    }
+  }
+
+  const tree = build(blog)
+
+  return writeFileSync(TREE_DIR, JSON.stringify(tree, null, 2))
+}
 
 type ExtendedBlogTreeNode = Omit<BlogTreeNode, 'children'> & {
   title: string
@@ -163,7 +207,7 @@ async function migrate() {
   const data = await parseTree(tree)
   // // Write table
   const table = flatten(data)
-  writeFileSync('app/db/table.json', JSON.stringify(table, null, 2))
+  writeFileSync(TABLE_DIR, JSON.stringify(table, null, 2))
   // Write index
   const document = lunr(function () {
     this.ref('route')
@@ -172,7 +216,7 @@ async function migrate() {
     this.field('content')
     table.forEach((doc) => this.add(doc))
   })
-  writeFileSync('app/db/index.json', JSON.stringify(document, null, 2))
+  writeFileSync(INDEX_DIR, JSON.stringify(document, null, 2))
 }
 
 migrate()

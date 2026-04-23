@@ -11,8 +11,8 @@
     "lint": "eslint app",
     "lint:watch": "nodemon --watch app --ext ts,tsx --exec 'pnpm lint' --signal SIGTERM",
     "typecheck": "react-router typegen && tsc",
-    "migrate": "tsx app/db/up.ts",
-    "migrate:watch": "nodemon --watch app/db/up.ts --watch app/routes --ext md,mdx --exec 'pnpm migrate' --signal SIGTERM"
+    "migrate": "tsx db.up.ts",
+    "migrate:watch": "nodemon --watch db.up.ts --watch app/routes --ext md,mdx --exec 'pnpm migrate' --signal SIGTERM"
   },
   "dependencies": {
     "@egjs/react-view360": "4.0.0-beta.7",
