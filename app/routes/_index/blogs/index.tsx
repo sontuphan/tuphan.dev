@@ -22,15 +22,13 @@ export default function Blogs() {
   console.log(limit, offset, tag)
 
   const onLoad = useCallback(async () => {
-    const data = await ky
-      .post('/api/blog', {
-        json: {
-          t: tag,
-          limit,
-          offset,
-        },
-      })
-      .json<string[]>()
+    const searchParams = new URLSearchParams({
+      limit: String(limit),
+      offset: String(offset),
+    })
+    if (tag) searchParams.set('t', tag)
+
+    const data = await ky.get('/api/blog', { searchParams }).json<string[]>()
     return setData(({ blogs: [...blogs] }) => {
       data.forEach((item, i) => (blogs[offset + i] = item))
       return { disabled: data.length !== limit, blogs }

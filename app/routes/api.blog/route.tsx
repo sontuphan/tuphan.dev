@@ -14,8 +14,8 @@ const dto = z.object({
     .transform((e) => e.replace(/[^a-zA-Z0-9]/g, ' '))
     .optional(),
   t: z.string().optional(),
-  limit: z.number().default(10),
-  offset: z.number().default(0),
+  limit: z.coerce.number().default(10),
+  offset: z.coerce.number().default(0),
 })
 
 export async function loader({ request }: Route.LoaderArgs) {
