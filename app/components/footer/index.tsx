@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useMotionValueEvent, useScroll, motion } from 'motion/react'
-import clsx from 'clsx'
 import { Link } from 'react-router'
 
 import { SiGithub, SiX } from '@icons-pack/react-simple-icons'
@@ -11,9 +10,9 @@ import Chill from './chill'
 import Theme from './theme'
 import Search from './search'
 
-function Menu({ open = true }: { open?: boolean }) {
+function Menu() {
   return (
-    <Dock className={clsx({ hidden: !open })} direction="middle">
+    <Dock direction="middle">
       <DockIcon>
         <Link className="btn btn-sm btn-circle btn-ghost" to="/welcome">
           <SquareUserRound className="w-4 h-4" />
@@ -65,15 +64,33 @@ export default function Footer() {
     setScroll(({ y: prev }) => ({ y, diff: y - prev }))
   })
 
+  const visible = scroll.y > 65
+
   return (
     <motion.div
-      initial="open"
-      animate={scroll.diff > 0 ? 'closed' : 'open'}
-      variants={{ open: { y: '0%' }, closed: { y: 'calc(100% + 0.65rem)' } }}
+      initial="hidden"
+      animate={!visible ? 'hidden' : scroll.diff > 0 ? 'closed' : 'open'}
+      variants={{
+        hidden: {
+          y: 'calc(100% + 0.65rem)',
+          opacity: 0,
+          pointerEvents: 'none',
+        },
+        open: {
+          y: '0%',
+          opacity: 1,
+          pointerEvents: 'auto',
+        },
+        closed: {
+          y: 'calc(100% + 0.65rem)',
+          opacity: 0,
+          pointerEvents: 'none',
+        },
+      }}
       transition={{ duration: 0.3 }}
     >
       <Island>
-        <Menu open={true} />
+        <Menu />
       </Island>
     </motion.div>
   )
