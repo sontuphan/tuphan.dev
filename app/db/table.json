@@ -8,7 +8,7 @@
     "tags": [],
     "description": "",
     "content": "",
-    "date": "2026-04-23T02:59:52.740Z",
+    "date": "2026-04-23T03:14:12.369Z",
     "children": [
       "/blog/ngay-nang-he",
       "/blog/explain-pow-consensus-in-my-way",
@@ -39,7 +39,10 @@
     "parent": "/blog",
     "title": "Explain PoW Consensus In My Way",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "web3"
     ],
@@ -55,7 +58,9 @@
     "parent": "/blog/explain-pow-consensus-in-my-way",
     "title": "Giải Thích PoW Theo Một Hướng Khác",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "web3",
       "🇻🇳"
