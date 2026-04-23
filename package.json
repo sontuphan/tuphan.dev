@@ -7,8 +7,8 @@
     "dev:watch": "react-router dev",
     "build": "react-router build",
     "start": "react-router-serve ./build/server/index.js",
-    "lint": "eslint app --ext .js,.jsx,.ts,.tsx",
-    "lint:watch": "nodemon --watch src --ext ts,tsx --exec 'pnpm lint' --signal SIGTERM",
+    "lint": "eslint app",
+    "lint:watch": "nodemon --watch app --ext ts,tsx --exec 'pnpm lint' --signal SIGTERM",
     "typecheck": "react-router typegen && tsc",
     "migrate": "tsx db.up.ts",
     "migrate:watch": "nodemon --watch db.up.ts --watch db/tree.json --watch src/routes --ext md,mdx --exec 'pnpm migrate' --signal SIGTERM"

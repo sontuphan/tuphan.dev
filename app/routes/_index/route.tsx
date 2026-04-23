@@ -7,7 +7,7 @@ import AnimatedLink from './alink'
 import Bullet from './bullet'
 import Social from './social'
 
-export function meta({}: Route.MetaArgs) {
+export function meta(_args: Route.MetaArgs) {
   return [
     { title: 'tuphan.dev' },
     {

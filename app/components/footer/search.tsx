@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 // import { usePathname } from 'next/navigation'
 // import useKeyboardJs from 'react-use/lib/useKeyboardJs'
 // import { useAsync } from 'react-use'
@@ -26,8 +26,7 @@ export function Kbd() {
 }
 
 export default function Search() {
-  const [open, setOpen] = useState(false)
-  const [keyword, setKeyword] = useState('')
+  const [, setOpen] = useState(false)
   // const [, e] = useKeyboardJs(isMac() ? 'command + k' : 'ctrl + k')
   // const pathname = usePathname()
 

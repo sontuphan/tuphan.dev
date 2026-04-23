@@ -31,7 +31,7 @@ import Header from './header'
 //   return metadata
 // }
 
-function PrevBlog({ route }: { route?: string }) {
+function PrevBlog({ route: _route }: { route?: string }) {
   // const { data: { parent } = {} } = useBlog(route)
   // const { data: { children: siblings = [] } = {} } = useBlog(parent)
   // const brother = useMemo(() => {
@@ -63,7 +63,7 @@ function PrevBlog({ route }: { route?: string }) {
   )
 }
 
-function NextBlog({ route }: { route?: string }) {
+function NextBlog({ route: _route }: { route?: string }) {
   // const { data: { parent, children = [] } = {} } = useBlog(route)
   // const { data: { parent: grand, children: siblings = [] } = {} } =
   //   useBlog(parent)
