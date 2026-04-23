@@ -12,6 +12,9 @@ import rehypeMdxImportMedia from 'rehype-mdx-import-media'
 import rehypeSlug from 'rehype-slug'
 
 export default defineConfig({
+  build: {
+    manifest: true,
+  },
   plugins: [
     mdx({
       providerImportSource: '~/components/md',

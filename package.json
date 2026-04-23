@@ -6,6 +6,7 @@
     "dev": "concurrently --names DEV,LNT,MGR -c cyan,yellow,magenta 'pnpm dev:watch' 'pnpm lint:watch' 'pnpm migrate:watch'",
     "dev:watch": "react-router dev",
     "build": "react-router build",
+    "ci:build": "pnpm migrate && react-router build",
     "start": "react-router-serve ./build/server/index.js",
     "lint": "eslint app",
     "lint:watch": "nodemon --watch app --ext ts,tsx --exec 'pnpm lint' --signal SIGTERM",

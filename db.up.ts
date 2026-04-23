@@ -1,5 +1,5 @@
 import fs, { readFileSync, writeFileSync } from 'fs'
-import { relative, parse } from 'path'
+import { dirname, relative, parse, resolve } from 'path'
 import { log } from 'isomorphic-git'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 import { select, selectAll } from 'unist-util-select'
@@ -22,6 +22,38 @@ type ExtendedBlogTreeNode = Omit<BlogTreeNode, 'children'> & {
   content: string
   children: ExtendedBlogTreeNode[]
   date: Date
+}
+
+function getAssetMap() {
+  try {
+    const manifest: ViteManifest = JSON.parse(
+      readFileSync('build/client/.vite/manifest.json', 'utf8'),
+    )
+
+    return Object.entries(manifest).reduce(
+      (map, [key, { file, src }]) => {
+        if (!file) return map
+        map[key] = `/${file}`
+        if (src) map[src] = `/${file}`
+        return map
+      },
+      {} as Record<string, string>,
+    )
+  } catch {
+    return {}
+  }
+}
+
+const assetMap = getAssetMap()
+
+function getImage(node: BlogTreeNode, url: string) {
+  if (!url) return ''
+  if (isURL(url) || url.startsWith('/')) return url
+
+  const [imagePath] = url.split(/[?#]/, 1)
+  const source = relative('.', resolve(dirname(node.file), imagePath))
+
+  return assetMap[source] ?? ''
 }
 
 async function parseTree(node: BlogTreeNode): Promise<ExtendedBlogTreeNode> {
@@ -51,27 +83,8 @@ async function parseTree(node: BlogTreeNode): Promise<ExtendedBlogTreeNode> {
   const heading = select('root > heading', md) || {}
   const paragraph = select('root > paragraph', md) || {}
   const text = selectAll('heading, paragraph', md)
-  const images = selectAll('image', md)
-  const [image = ''] = images.map((image) => {
-    try {
-      const { url } = Object.assign({ url: '' }, image)
-      if (isURL(url)) return url
-      // const { dir } = parse(node.path)
-      // const { name, ext } = parse(url)
-      // const img = readFileSync(resolve(dir, url))
-      // const hash = util
-      //   .createHash('xxhash64')
-      //   .update(img)
-      //   .digest('hex')
-      //   .toString()
-      //   .substring(0, 8)
-      // const out = `/_next/static/media/${name}.${hash}${ext}`
-      const out = ''
-      return out
-    } catch {
-      return ''
-    }
-  })
+  const { url } = Object.assign({ url: '' }, select('image', md))
+  const image = getImage(node, url)
   const commits = await log({
     fs,
     dir: './',

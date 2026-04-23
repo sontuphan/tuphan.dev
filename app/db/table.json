@@ -8,7 +8,7 @@
     "tags": [],
     "description": "",
     "content": "",
-    "date": "2026-04-23T03:16:03.067Z",
+    "date": "2026-04-23T04:01:46.149Z",
     "children": [
       "/blog/ngay-nang-he",
       "/blog/explain-pow-consensus-in-my-way",
@@ -20,7 +20,7 @@
     "route": "/blog/ngay-nang-he",
     "parent": "/blog",
     "title": "Ngày nắng hè",
-    "image": "",
+    "image": "/assets/IMG_0707-DbQy5eBV.JPG",
     "authors": [
       "Tu Phan",
       "tuphan-dn"
@@ -29,8 +29,8 @@
       "tản văn",
       "🇻🇳"
     ],
-    "description": "Trích một đoạn trong \"Khói trời lộng lẫy\" của chị Tư (Nguyễn Ngọc Tư). Dù chị Tư sinh năm 1976, nghĩa là lớn hơn tôi tận 18 tuổi, nhưng gọi chị là chị vì văn chị trẻ dữ quá. Chị Tư viết sao giản dị mà lại thiệt tình và hay lắm.",
-    "content": "Ngày nắng hè Trích một đoạn trong \"Khói trời lộng lẫy\" của chị Tư (Nguyễn Ngọc Tư). Dù chị Tư sinh năm 1976, nghĩa là lớn hơn tôi tận 18 tuổi, nhưng gọi chị là chị vì văn chị trẻ dữ quá. Chị Tư viết sao giản dị mà lại thiệt tình và hay lắm. Tôi thấy mình nghèo quá, mình chỉ có tình thương. Tôi chỉ có thể hứa những lời hứa nghèo, chừng nào hái bí mẹ mua cho con bộ đồ mới, chừng nào con lớn mẹ sẽ cho đi chơi thành phố, chừng nào kiếm nhiều tiền mẹ mua chiếc xe đạp cho con chạy lòng vòng cồn chơi. Hoặc lời hứa mịt mù kiểu như \"nghe lời mẹ rồi mẹ thương…\". Bầu. Tháng 9 năm 2016. Đọc đoạn này tôi cứ miên man nhớ về ngày tháng bé xíu. Hình ảnh xóm Bầu hiện lên trong tôi vẫn luôn là những ngày nắng, gió lộng. Cũng có lẽ vì thế mà tôi lấy tựa \"Ngày nắng hè\" là thích hợp nhất cho những đoạn bình dị này. Nhà cũ. Tháng 9 năm 2016.",
+    "description": "Trích một đoạn trong \"Khói trời lộng lẫy\" của chị Tư (Nguyễn Ngọc Tư). Dù chị Tư sinh năm 1976, nghĩa là lớn hơn tôi tận 18 tuổi, nhưng gọi chị là chị vì văn chị trẻ dữ quá. Chị Tư viết sao giản dị mà lại thiệt tình, nghe hay lắm.",
+    "content": "Ngày nắng hè Trích một đoạn trong \"Khói trời lộng lẫy\" của chị Tư (Nguyễn Ngọc Tư). Dù chị Tư sinh năm 1976, nghĩa là lớn hơn tôi tận 18 tuổi, nhưng gọi chị là chị vì văn chị trẻ dữ quá. Chị Tư viết sao giản dị mà lại thiệt tình, nghe hay lắm. Tôi thấy mình nghèo quá, mình chỉ có tình thương. Tôi chỉ có thể hứa những lời hứa nghèo, chừng nào hái bí mẹ mua cho con bộ đồ mới, chừng nào con lớn mẹ sẽ cho đi chơi thành phố, chừng nào kiếm nhiều tiền mẹ mua chiếc xe đạp cho con chạy lòng vòng cồn chơi. Hoặc lời hứa mịt mù kiểu như \"nghe lời mẹ rồi mẹ thương…\". Bầu. Tháng 9 năm 2016. Đọc đoạn này tôi cứ miên man nhớ về ngày tháng bé xíu. Hình ảnh xóm Bầu hiện lên trong tôi vẫn luôn là những ngày nắng, gió lộng. Cũng có lẽ vì thế mà tôi lấy tựa \"Ngày nắng hè\" là thích hợp nhất cho những đoạn bình dị này. Nhà cũ. Tháng 9 năm 2016.",
     "date": "2024-12-02T17:00:00.000Z",
     "children": []
   },
@@ -38,7 +38,7 @@
     "route": "/blog/explain-pow-consensus-in-my-way",
     "parent": "/blog",
     "title": "Explain PoW Consensus In My Way",
-    "image": "",
+    "image": "/assets/pow-4vj5aVxl.jpg",
     "authors": [
       "Tu Phan",
       "tuphan-dn"
@@ -57,7 +57,7 @@
     "route": "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac",
     "parent": "/blog/explain-pow-consensus-in-my-way",
     "title": "Giải Thích PoW Theo Một Hướng Khác",
-    "image": "",
+    "image": "/assets/pow-4vj5aVxl.jpg",
     "authors": [
       "Tu Phan"
     ],
@@ -74,7 +74,7 @@
     "route": "/blog/cheatsheet-digital-signature-in-web3",
     "parent": "/blog",
     "title": "Cheatsheet: Digital Signature in Web3",
-    "image": "",
+    "image": "/assets/dsa-CWEGnhwm.png",
     "authors": [
       "Tu Phan",
       "tuphan-dn"
@@ -92,7 +92,7 @@
     "route": "/blog/canh-dieu-thang-6",
     "parent": "/blog",
     "title": "Cánh diều tháng 6",
-    "image": "",
+    "image": "/assets/tu-ben-soi-nhin-ve-ben-ba-6-BhgAnOn8.jpg",
     "authors": [
       "Tu Phan",
       "tuphan-dn"

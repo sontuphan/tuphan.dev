@@ -87,7 +87,7 @@
         29,
         0.831,
         30,
-        0.088,
+        0.06,
         31,
         0.831,
         32,
@@ -109,8 +109,10 @@
         40,
         0.831,
         41,
-        0.357,
+        0.56,
         42,
+        0.357,
+        43,
         0.831
       ]
     ],
@@ -178,7 +180,7 @@
         29,
         1.167,
         30,
-        0.132,
+        0.124,
         31,
         1.167,
         32,
@@ -200,59 +202,59 @@
         40,
         1.541,
         41,
-        0.501,
+        1.037,
         42,
-        1.167,
+        0.501,
         43,
         1.167,
         44,
-        1.037,
+        1.167,
         45,
-        1.541,
+        1.037,
         46,
-        0.459,
+        1.541,
         47,
-        2.305,
+        0.459,
         48,
-        0.661,
+        2.305,
         49,
-        2.58,
+        0.661,
         50,
-        1.161,
+        2.58,
         51,
         1.161,
         52,
-        2.58,
+        1.161,
         53,
-        1.725,
+        2.58,
         54,
-        1.747,
-        55,
-        0.74,
-        56,
-        2.305,
-        57,
-        0.787,
-        58,
         1.725,
+        55,
+        1.747,
+        56,
+        0.74,
+        57,
+        2.305,
+        58,
+        0.787,
         59,
-        0.084,
+        1.725,
         60,
-        1.167,
-        61,
         0.084,
-        62,
-        1.541,
-        63,
+        61,
         1.167,
+        62,
+        0.084,
+        63,
+        1.541,
         64,
         1.167,
         65,
-        1.747,
+        1.167,
         66,
-        0.786,
-        67,
         1.747,
+        67,
+        0.786,
         68,
         1.747,
         69,
@@ -260,23 +262,23 @@
         70,
         1.747,
         71,
-        0.786,
+        1.747,
         72,
-        1.167,
+        0.786,
         73,
         1.167,
         74,
-        1.747,
-        75,
         1.167,
+        75,
+        1.747,
         76,
         1.167,
         77,
-        1.747,
-        78,
-        0.787,
-        79,
         1.167,
+        78,
+        1.747,
+        79,
+        0.787,
         80,
         1.747,
         81,
@@ -676,21 +678,21 @@
         0.056,
         37,
         0.182,
-        44,
+        45,
         0.523,
-        46,
+        47,
         0.271,
-        48,
+        49,
         0.333,
-        51,
+        52,
         0.523,
-        57,
+        58,
         0.333,
-        59,
+        60,
         0.056,
-        61,
+        62,
         0.056,
-        78,
+        79,
         0.333,
         85,
         0.333,
@@ -802,41 +804,41 @@
         37,
         0.452,
         41,
-        0.677,
-        44,
         0.556,
-        46,
+        42,
+        0.677,
+        45,
+        0.556,
+        47,
         0.475,
-        48,
+        49,
         0.753,
-        51,
+        52,
         0.556,
-        53,
+        54,
         1.211,
-        55,
+        56,
         0.814,
-        57,
+        58,
         0.677,
-        59,
-        0.144,
         60,
-        0.826,
+        0.144,
         61,
+        0.826,
+        62,
         0.137,
-        63,
-        1.211,
         64,
         1.211,
-        66,
+        65,
+        1.211,
+        67,
         0.556,
-        71,
+        72,
         0.556,
-        73,
+        74,
         0.826,
-        78,
-        0.721,
         79,
-        0.826,
+        0.721,
         81,
         0.815,
         85,
@@ -1174,9 +1176,9 @@
       [
         2,
         0.121,
-        59,
+        60,
         0.154,
-        61,
+        62,
         0.121,
         108,
         0.745,
@@ -1400,15 +1402,15 @@
         0.205,
         38,
         0.376,
-        46,
+        47,
         0.205,
-        50,
+        51,
         0.85,
-        55,
+        56,
         0.376,
-        59,
+        60,
         0.063,
-        61,
+        62,
         0.063,
         82,
         0.376,
@@ -1521,41 +1523,41 @@
         0.464,
         38,
         0.618,
-        41,
+        42,
         0.295,
-        43,
-        0.687,
-        45,
+        44,
         0.687,
         46,
+        0.687,
+        47,
         0.467,
-        48,
+        49,
         0.774,
-        50,
+        51,
         1.185,
-        55,
+        56,
         0.618,
-        57,
-        0.452,
         58,
-        1.283,
+        0.452,
         59,
+        1.283,
+        60,
         0.145,
-        61,
-        0.049,
         62,
+        0.049,
+        63,
         1.054,
-        66,
-        0.71,
-        71,
+        67,
         0.71,
         72,
-        0.687,
-        75,
+        0.71,
+        73,
         0.687,
         76,
+        0.687,
+        77,
         1.054,
-        78,
+        79,
         0.835,
         81,
         0.71,
@@ -1978,7 +1980,7 @@
     [
       "",
       {
-        "_index": 59,
+        "_index": 60,
         "title": {},
         "description": {
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {},
@@ -2229,7 +2231,7 @@
     [
       "b",
       {
-        "_index": 55,
+        "_index": 56,
         "title": {},
         "description": {
           "/blog/canh-dieu-thang-6": {}
@@ -2600,7 +2602,7 @@
     [
       "c",
       {
-        "_index": 46,
+        "_index": 47,
         "title": {},
         "description": {
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {},
@@ -2703,7 +2705,7 @@
     [
       "chiếc",
       {
-        "_index": 68,
+        "_index": 69,
         "title": {},
         "description": {},
         "content": {
@@ -2738,7 +2740,7 @@
     [
       "cho",
       {
-        "_index": 57,
+        "_index": 58,
         "title": {},
         "description": {
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {}
@@ -2845,7 +2847,7 @@
     [
       "chơi",
       {
-        "_index": 62,
+        "_index": 63,
         "title": {},
         "description": {},
         "content": {
@@ -2868,7 +2870,7 @@
     [
       "chại",
       {
-        "_index": 71,
+        "_index": 72,
         "title": {},
         "description": {},
         "content": {
@@ -2929,7 +2931,7 @@
     [
       "chừng",
       {
-        "_index": 52,
+        "_index": 53,
         "title": {},
         "description": {},
         "content": {
@@ -3052,7 +3054,7 @@
     [
       "con",
       {
-        "_index": 58,
+        "_index": 59,
         "title": {},
         "description": {},
         "content": {
@@ -3390,7 +3392,7 @@
     [
       "cồn",
       {
-        "_index": 74,
+        "_index": 75,
         "title": {},
         "description": {},
         "content": {
@@ -4290,7 +4292,7 @@
     [
       "hay",
       {
-        "_index": 41,
+        "_index": 42,
         "title": {},
         "description": {
           "/blog/ngay-nang-he": {}
@@ -4374,7 +4376,7 @@
     [
       "hoặc",
       {
-        "_index": 75,
+        "_index": 76,
         "title": {},
         "description": {},
         "content": {
@@ -4386,7 +4388,7 @@
     [
       "hái",
       {
-        "_index": 54,
+        "_index": 55,
         "title": {},
         "description": {},
         "content": {
@@ -4512,7 +4514,7 @@
     [
       "hứa",
       {
-        "_index": 49,
+        "_index": 50,
         "title": {},
         "description": {},
         "content": {
@@ -4775,7 +4777,7 @@
     [
       "kiếm",
       {
-        "_index": 65,
+        "_index": 66,
         "title": {},
         "description": {},
         "content": {
@@ -4786,7 +4788,7 @@
     [
       "kiểu",
       {
-        "_index": 77,
+        "_index": 78,
         "title": {},
         "description": {},
         "content": {
@@ -5019,7 +5021,7 @@
     [
       "lòng",
       {
-        "_index": 72,
+        "_index": 73,
         "title": {},
         "description": {},
         "content": {
@@ -5140,7 +5142,7 @@
     [
       "lắm",
       {
-        "_index": 42,
+        "_index": 43,
         "title": {},
         "description": {
           "/blog/ngay-nang-he": {}
@@ -5192,7 +5194,7 @@
     [
       "lời",
       {
-        "_index": 51,
+        "_index": 52,
         "title": {},
         "description": {
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {}
@@ -5335,7 +5337,7 @@
     [
       "mua",
       {
-        "_index": 56,
+        "_index": 57,
         "title": {},
         "description": {},
         "content": {
@@ -5413,7 +5415,7 @@
     [
       "mình",
       {
-        "_index": 44,
+        "_index": 45,
         "title": {},
         "description": {
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {}
@@ -5482,7 +5484,7 @@
     [
       "mịt",
       {
-        "_index": 76,
+        "_index": 77,
         "title": {},
         "description": {},
         "content": {
@@ -5545,7 +5547,7 @@
     [
       "mới",
       {
-        "_index": 60,
+        "_index": 61,
         "title": {},
         "description": {},
         "content": {
@@ -5654,9 +5656,11 @@
     [
       "nghe",
       {
-        "_index": 79,
+        "_index": 41,
         "title": {},
-        "description": {},
+        "description": {
+          "/blog/ngay-nang-he": {}
+        },
         "content": {
           "/blog/ngay-nang-he": {},
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {}
@@ -5679,7 +5683,7 @@
     [
       "nghèo",
       {
-        "_index": 45,
+        "_index": 46,
         "title": {},
         "description": {},
         "content": {
@@ -5824,7 +5828,7 @@
     [
       "nh",
       {
-        "_index": 78,
+        "_index": 79,
         "title": {},
         "description": {
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {}
@@ -5890,7 +5894,7 @@
     [
       "nhiều",
       {
-        "_index": 66,
+        "_index": 67,
         "title": {},
         "description": {},
         "content": {
@@ -6021,7 +6025,7 @@
     [
       "những",
       {
-        "_index": 50,
+        "_index": 51,
         "title": {},
         "description": {
           "/blog/canh-dieu-thang-6": {}
@@ -6085,7 +6089,7 @@
     [
       "nào",
       {
-        "_index": 53,
+        "_index": 54,
         "title": {},
         "description": {},
         "content": {
@@ -6349,7 +6353,7 @@
     [
       "p",
       {
-        "_index": 70,
+        "_index": 71,
         "title": {},
         "description": {},
         "content": {
@@ -6393,7 +6397,7 @@
     [
       "ph",
       {
-        "_index": 64,
+        "_index": 65,
         "title": {},
         "description": {},
         "content": {
@@ -6969,7 +6973,7 @@
     [
       "s",
       {
-        "_index": 61,
+        "_index": 62,
         "title": {},
         "description": {
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {},
@@ -7508,7 +7512,7 @@
     [
       "th",
       {
-        "_index": 48,
+        "_index": 49,
         "title": {},
         "description": {
           "/blog/explain-pow-consensus-in-my-way/giai-thich-pow-theo-mot-huong-khac": {}
@@ -7620,7 +7624,7 @@
     [
       "thành",
       {
-        "_index": 63,
+        "_index": 64,
         "title": {},
         "description": {},
         "content": {
@@ -7709,7 +7713,7 @@
     [
       "thương",
       {
-        "_index": 47,
+        "_index": 48,
         "title": {},
         "description": {},
         "content": {
@@ -7742,7 +7746,7 @@
     [
       "thấi",
       {
-        "_index": 43,
+        "_index": 44,
         "title": {},
         "description": {},
         "content": {
@@ -7868,7 +7872,7 @@
     [
       "tiền",
       {
-        "_index": 67,
+        "_index": 68,
         "title": {},
         "description": {},
         "content": {
@@ -8541,7 +8545,7 @@
     [
       "vòng",
       {
-        "_index": 73,
+        "_index": 74,
         "title": {},
         "description": {},
         "content": {
@@ -8790,7 +8794,7 @@
     [
       "xe",
       {
-        "_index": 69,
+        "_index": 70,
         "title": {},
         "description": {},
         "content": {
