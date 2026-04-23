@@ -1,4 +1,3 @@
-'use client'
 import { useMemo } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import clsx from 'clsx'
@@ -15,7 +14,7 @@ const MotionLink = motion.create(Link)
 function NavLink({ to }: { to: string }) {
   const { data: name = '#' } = useSWR(to, async (api: string) => {
     if (api === '/') return 'Blog'
-    const data = await ky.get(`/api/${api}`).json<Blog | undefined>()
+    const data = await ky.get('/api' + api).json<Blog | undefined>()
     return data?.title || '#'
   })
 
