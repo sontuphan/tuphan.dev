@@ -1,12 +1,12 @@
 import type { MDXComponents } from 'mdx/types'
 
-import Link from './link'
+import SmartLink from './slink'
 import Image from './image'
 import Pre, { Tabs, Tab } from './highlight'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    a: Link,
+    a: SmartLink,
     img: Image,
     pre: Pre,
     Tabs,

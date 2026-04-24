@@ -4,17 +4,17 @@ import clsx from 'clsx'
 import ky from 'ky'
 import { type OgObject } from 'open-graph-scraper/types'
 
-import { Link as BaseLink } from 'react-router'
+import { Link } from 'react-router'
 import { ExternalLink } from 'lucide-react'
 
-export type LinkProps = ComponentProps<'a'>
+export type SmartLinkProps = ComponentProps<'a'>
 
-export default function Link({
+export default function SmartLink({
   className,
   children,
   href,
   ...props
-}: LinkProps) {
+}: SmartLinkProps) {
   const { value } = useAsync(async () => {
     if (children !== '@preview') return undefined
     const data = await ky.get<OgObject>(`/api/proxy/og?url=${href}`).json()
@@ -40,7 +40,7 @@ export default function Link({
   }, [children, value])
 
   return (
-    <BaseLink
+    <Link
       className={clsx(
         'transition-all text-info-content decoration-2 underline-offset-2 hover:underline-offset-4 decoration-info-content/20 hover:decoration-info-content/60',
         className,
@@ -49,6 +49,6 @@ export default function Link({
       {...props}
     >
       {comp}
-    </BaseLink>
+    </Link>
   )
 }
