@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently --names DEV,LNT,MGR -c cyan,yellow,magenta 'pnpm dev:watch' 'pnpm lint:watch' 'pnpm migrate:watch'",
+    "dev": "concurrently --names DEV,LNT -c cyan,yellow 'pnpm dev:watch' 'pnpm lint:watch'",
     "dev:watch": "react-router dev",
     "build": "react-router build",
     "ci:build": "pnpm migrate && react-router build",
@@ -37,6 +37,7 @@
     "mermaid": "^11.14.0",
     "motion": "^12.38.0",
     "next-themes": "^0.4.6",
+    "open-graph-scraper": "^6.11.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-medium-image-zoom": "^5.4.3",

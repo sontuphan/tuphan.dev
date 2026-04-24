@@ -8,7 +8,7 @@
     "tags": [],
     "description": "",
     "content": "",
-    "date": "2026-04-23T15:49:37.521Z",
+    "date": "2026-04-24T01:42:11.988Z",
     "children": [
       "/blog/block-based-shamir-secret-sharing",
       "/blog/rust-traits-cheatsheet",
@@ -18,6 +18,7 @@
       "/blog/permutation-argument-in-plonk",
       "/blog/the-groth16-intuition",
       "/blog/ngay-nang-he",
+      "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
       "/blog/explain-pow-consensus-in-my-way",
       "/blog/schnorrs-protocol-cheatsheet",
       "/blog/leveraging-dutch-auctions-for-efficient-onchain-market",
@@ -47,7 +48,9 @@
     "parent": "/blog",
     "title": "Block-Based Shamir Secret Sharing",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "cryptography",
       "math"
@@ -62,7 +65,9 @@
     "parent": "/blog",
     "title": "Rust Traits Cheatsheet",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "backend"
     ],
@@ -76,7 +81,9 @@
     "parent": "/blog",
     "title": "Đạo đức 1",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "tản văn",
       "🇻🇳"
@@ -91,7 +98,9 @@
     "parent": "/blog",
     "title": "Good Writing by Paul Graham",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "mba"
     ],
@@ -105,7 +114,9 @@
     "parent": "/blog",
     "title": "Chiếc bè của bám chấp, Thầy Thích Minh Tuệ",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "tản văn",
       "🇻🇳"
@@ -120,7 +131,9 @@
     "parent": "/blog",
     "title": "Permutation Argument in Plonk",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "cryptography",
       "math"
@@ -135,7 +148,9 @@
     "parent": "/blog",
     "title": "The Groth16 Intuition",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "cryptography",
       "math"
@@ -161,6 +176,146 @@
     "description": "Trích một đoạn trong \"Khói trời lộng lẫy\" của chị Tư (Nguyễn Ngọc Tư). Dù chị Tư sinh năm 1976, nghĩa là lớn hơn tôi tận 18 tuổi, nhưng gọi chị là chị vì văn chị trẻ dữ quá. Chị Tư viết sao giản dị mà lại thiệt tình, nghe hay lắm.",
     "content": "Ngày nắng hè Trích một đoạn trong \"Khói trời lộng lẫy\" của chị Tư (Nguyễn Ngọc Tư). Dù chị Tư sinh năm 1976, nghĩa là lớn hơn tôi tận 18 tuổi, nhưng gọi chị là chị vì văn chị trẻ dữ quá. Chị Tư viết sao giản dị mà lại thiệt tình, nghe hay lắm. Tôi thấy mình nghèo quá, mình chỉ có tình thương. Tôi chỉ có thể hứa những lời hứa nghèo, chừng nào hái bí mẹ mua cho con bộ đồ mới, chừng nào con lớn mẹ sẽ cho đi chơi thành phố, chừng nào kiếm nhiều tiền mẹ mua chiếc xe đạp cho con chạy lòng vòng cồn chơi. Hoặc lời hứa mịt mù kiểu như \"nghe lời mẹ rồi mẹ thương…\". Bầu. Tháng 9 năm 2016. Đọc đoạn này tôi cứ miên man nhớ về ngày tháng bé xíu. Hình ảnh xóm Bầu hiện lên trong tôi vẫn luôn là những ngày nắng, gió lộng. Cũng có lẽ vì thế mà tôi lấy tựa \"Ngày nắng hè\" là thích hợp nhất cho những đoạn bình dị này. Nhà cũ. Tháng 9 năm 2016.",
     "date": "2024-12-02T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+    "parent": "/blog",
+    "title": "CS01: Dự án chuẩn công nghiệp trên Ethereum",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "evm",
+      "hardhat",
+      "webdev",
+      "🇻🇳"
+    ],
+    "description": "Chạm tới tiêu chuẩn công nghiệp trong phát triển phần mềm web3. Nguồn ảnh: https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-web3",
+    "content": "CS01: Dự án chuẩn công nghiệp trên Ethereum Chạm tới tiêu chuẩn công nghiệp trong phát triển phần mềm web3. Nguồn ảnh: https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-web3 Trong loạt bài này, chúng ta sẽ xây dựng một ứng dụng đếm số on-chain và cố gắng thực hành theo quy trình công nghiệp hiện nay tại các công ty web3. Thông qua đó, bạn sẽ Học cách phát triển và kiểm thử smartcontract trên Ethereum với Hardhat? Triển khai smartcontract cùng với một Typescript SDK bằng Viem? Xây dựng DApp với RemixJS, TailwindCSS, và DaisyUI. Cho phép nhiều loại ví kết nối và DApp thông qua Rainbowkit. Cài đặt Github Action cho DevOps và đẩy DApp lên Cloudflare Pages. Đặc biệt, toàn bộ quá trình phát triển và bảo trì ứng dụng sẽ tốn 0 đồng. @preview Mục lục Smartcontract: Bộ đếm on-chain với Hardhat Kiểm thử Triển khai smartcontract Triển khai SDK Giao diện DApp Kết nối ví DevOps và hạ tầng Trước khi bắt đầu Một điều hiển nhiên rằng sẽ có rất nhiều tiêu chuẩn về ngôn ngữ, techstack, và hạ tầng để triển khai một ứng dụng web3 một cách nhanh chóng, hiệu quả, và an toàn, loạt bài này hướng tới các lập trình viên mới làm quen với web3 có nhu cầu xác định được một quy trình làm việc cơ sở, từ đó có thể vươn xa trên con đường trở thành một lập trình viên web3, và hơn thế nữa là một nhà phát triển ứng dụng web3 độc lập. Trong phạm vi trình bày, các thuật ngữ cơ bản như block header, smartcontract, transaction call, consensus,... sẽ được hiểu là người đọc đã nắm chắc và thoải mái làm việc với chúng.",
+    "date": "2024-11-01T17:00:00.000Z",
+    "children": [
+      "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/devops-va-ha-tang",
+      "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/ket-noi-vi",
+      "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/giao-dien-dapp",
+      "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/trien-khai-sdk",
+      "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/trien-khai-smartcontract",
+      "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/kiem-thu",
+      "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/smartcontract-bo-dem-on-chain-voi-hardhat"
+    ]
+  },
+  {
+    "route": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/devops-va-ha-tang",
+    "parent": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+    "title": "DevOps và hạ tầng",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "webdev",
+      "🇻🇳"
+    ],
+    "description": "Khái niệm CI/CD là viết tắt của Continuous Integration và Continuous Deployment. Các công việc như kiểm thử phần mềm, xuất bản SDK, triển khai DApp là các công việc lặp đi lặp lại và có tính khuôn mẫu cho các phiên bản phần mềm. Thay vì làm thủ công, ví dụ như chạy npm publish, ta có thể tự dộng hoá quá trình này và ta gọi là CI/CD. CI/CD giúp giảm thời gian cũng như rủi ro trong quá trình triển khai hệ thống.",
+    "content": "DevOps và hạ tầng Khái niệm CI/CD là viết tắt của Continuous Integration và Continuous Deployment. Các công việc như kiểm thử phần mềm, xuất bản SDK, triển khai DApp là các công việc lặp đi lặp lại và có tính khuôn mẫu cho các phiên bản phần mềm. Thay vì làm thủ công, ví dụ như chạy npm publish, ta có thể tự dộng hoá quá trình này và ta gọi là CI/CD. CI/CD giúp giảm thời gian cũng như rủi ro trong quá trình triển khai hệ thống. Trong bài này, tự động hoá việc triển khai DApp sẽ dựa trên các điều kiện cụ thể (Ví dụ, merge nhánh develop vào master) thông qua GitHub Actions. Đồng thời, hạ tầng Cloudflare với chi phí gần như bằng 0 sẽ sử được dụng để giúp tiết kiệm. Xuất bản SDK Tạo acccess token Trước hệt chúng ta cần một access tokens của tài khoản npmjs.com để có thể xuất bản SDK. Đăng nhập npmjs.com. Chọn vào ảnh đại diện. Chọn Access Tokens. Chọn Generate New Token. Chọn Classic Token. Đặt tên và chọn Automation. Chọn Generate Token và lưu lại token sinh ra. Sau đó ta cần thêm token vừa tạo được vào github repository. Truy cập github repository của bạn. Ví dụ ở đây là tuphan-dn/cs01-2024. Chọn Settings. Chọn Secrets and variables. Chọn Actions. Chọn New repository secret. Điền NPM_TOKEN vào Name và giá trị access token và trường Secret. Nhấn Add secret. Xây dựng CI/CD @preview Trong phần này chúng ta sẽ làm việc với repo cs01-2024 của SDK. Lưu ý, repo cs01-2024 >< repo cs01-app-2024 Thêm file release.yml trong thư mục vừa tạo. Để kiểm tra process, bạn cần cập nhật lại version sdk lên 1.0.1 trong package.json và push tất cả thay đổi lên nhanh master. Lúc này, trong phần Actions của github repository bạn sẽ thấy một process CI/CD được khởi chạy và follow theo các bước đã định nghĩa trong release.yml. Triển khai DApp Khác với Xuất bản SDK, triển khai DApp lại tương đối đơn giản khi mà đa số các bước cài đặt đã được Cloudflare Pages tự động sẵn. Lưu ý, phần này ta sẽ làm việc với repo css01-app-2024. @preview Nhưng trước khi kết nối với Cloudflare Pages, ta cần thiết lập DApp build dưới dạng static. Ở dạng này, chúng ta không cần thiết một server để host DApp. Thay vào đó, DApp đã build dưới dạng static sẽ được lưu ở mạng CDN. Hướng tiếp cận này cho nhiều lợi điểm ví như không cần server và không phải quản lý tải, loại bỏ DDoS, chi phí bằng 0, app được load nhanh hơn... Build static Kết nối Cloudflare Đăng nhập Cloudflare Dashboard. Chọn Workers & Pages. Chọn Create. Chọn Pages. Chọn Connect to Git và kết nối đến repo cs01-app-2024 của bạn. Chọn Remix ở mục Framework preset. Cập nhật Build command thành pnpm build. Chọn Save & Deploy. Chọn Continue to project. Sau khi triển khai thành công, DApp sẽ chạy ở tên miền của pages.dev, ví dụ https://cs01-app-2024.pages.dev/. Giờ đây, với mỗi cập nhật ở nhánh master, Cloudflare sẽ tự động cập nhật trực tiếp lên DApp thay bạn.",
+    "date": "2024-11-29T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/ket-noi-vi",
+    "parent": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+    "title": "Kết nối ví",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "evm",
+      "🇻🇳"
+    ],
+    "description": "Theo thống kê, hiện nay có từ 300-500 ví crypto. Việc tích hợp một số lượng ví đa dạng cho DApp và bảo trì, cập nhật là rất tốn công sức. Thay vì phải làm điều này từ đầu, chúng ta có thể sử dụng các bộ kit có sẵn và không phải quan tâm quá sâu vào quá trình tích hợp ví đơn lẻ.",
+    "content": "Kết nối ví Theo thống kê, hiện nay có từ 300-500 ví crypto. Việc tích hợp một số lượng ví đa dạng cho DApp và bảo trì, cập nhật là rất tốn công sức. Thay vì phải làm điều này từ đầu, chúng ta có thể sử dụng các bộ kit có sẵn và không phải quan tâm quá sâu vào quá trình tích hợp ví đơn lẻ. Có khá nhiều bộ kit ví dụ như Rainbowkit, Onchainkit của Coinbase, Wallet SDK của thirdweb.... Tuy nhiên, trong phạm vi bài viết chúng ta sẽ chỉ sử dụng một trong các bộ kit trên và là Rainbowkit. RainbowKit Wallet Provider Tạo file wallet.provider.tsx trong thư mục providers vừa được tạo. Ngoài ra, chúng ta cũng sẽ cập nhật lại configs.ts để hỗ trợ multichain. projectId để có thể làm việc với WalletConnect. Nếu bạn muốn hỗ trợ WalletConnect thì có thể đăng ký miễn phí projectId tại WalletConnect Cloud. Thêm WalletProvider vào root.tsx. Sử dụng wagmi hooks Trong bài trước, để tương tác onchain thì chúng ta đã tạo publicClient thông qua hàm createPublicClient. Tuy nhiên với việc hỗ trợ multichain, chúng ta cần phải viết lại việc nhận dạng chain hiện tại để thay đổi các cài đặt tương ứng cho hàm createPublicClient và điều này là không hề nhanh. May thay, wagmi (đi kèm theo với RainbowKit) đã cũng cấp một \"encaplsulated\" hook tên là usePublicClient và xử lý toàn bộ các luận lý phức tập nêu trên. Ta sẽ thử cập nhật lại routes/_index.tsx với hướng tiệp cập này. ⚠️ Có khả năng cao là bạn sẽ gặp lỗi vì lý do sau khi cập nhật, chain mặc định đang là mainnet trong khi contract của chúng ta hiện chỉ có trên holesky. Đừng quá lo vì mọi thứ vẫn đang đi đúng hướng. Connection Button Tạo file header.tsx trong app. Sau đó, thiết lập Header vào template của App. Chúng ta được giao diện với thanh Header và nút Connect Wallet. Lúc này, ta đã có thể kết nối ví và chọn mạng holesky. Header cùng với nút Connect Wallet. Thực hiện kết nối ví Metamask và switch sang mạng Holesky. Tương tác onchain Giờ đây với việc kết nối ví thành công, nó cho phép chúng ta có thể tương tác nhiều hơn với smartcontract và cụ thể trong ví dụ này sẽ là gọi hàm increase từ contract Counter. 🎉 Nhấn Increase và ký transaction. Chờ đến khi transaction được xác nhận chúng ta có thể refresh lại ứng dụng và nhận được giá trị counter mới cập nhật lên 2. Đồng thời chúng ta cũng có thể thấy, mỗi lần muốn cập nhật lại giá trị counter, chúng ta buộc phải refresh lại ứng dụng. Để cải thiện lại trải nghiệm người dùng, hãy thử realtime hoá ứng dụng ở phần tiếp theo. Ứng dụng thời gian thực Lưu ý, cần thiết phải return ở userEffect. Vì hàm watchCounter sẽ trả về một hàm unwatch, nghĩa là useEffect sẽ chạy unwatch ở mỗi lần rerender và tránh memory leaks. Kết luận Như vậy chúng ta đã đi qua hết 6 bài chính về xây dựng DApp. Bạn có thể theo dõi lại toàn bộ DApp hoàn chỉnh ở repo bên dưới. Ở bài tiếp theo, chúng ta sẽ hoàn thiện các quy trình về DevOps để tăng tốc và nâng cao tính tin cậy cho việc publish ứng dụng cho người dùng. @preview",
+    "date": "2024-11-25T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/giao-dien-dapp",
+    "parent": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+    "title": "Giao diện DApp",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "webdev",
+      "🇻🇳"
+    ],
+    "description": "Vẻ đẹp của các Decentralized App nằm ở việc bạn có thể không cần dùng tới Backend để duy trì dịch vụ. Một giao diện được kết nối trực tiếp với Blockchain nếu được thiết kế tốt vẫn tạo ra một trải nghiệm mượt mà cho người dùng.",
+    "content": "Giao diện DApp Vẻ đẹp của các Decentralized App nằm ở việc bạn có thể không cần dùng tới Backend để duy trì dịch vụ. Một giao diện được kết nối trực tiếp với Blockchain nếu được thiết kế tốt vẫn tạo ra một trải nghiệm mượt mà cho người dùng. https://remix.run Trong phạm vi series, chúng ta sẽ sử dụng RemixJS để xây dựng một ứng dụng. Lý do chọn RemixJS thay vì NextJS? Theo quan điểm của người viết, NextJS được tạo ra theo hướng \"opinionate\" và phục vụ cho hạ tầng Vercel. Còn RemixJS, bản thân nó là opensource và được thiết kế để hoạt động với mọi hạ tầng. Điều này càng được khẳng định khi ChatGPT đã chuyển từ NextJS sang RemixJS. @preview Khởi tạo RemixJS Chúng ta sử dụng câu lệnh create-remix với các cài đặt mặc định. Ta được cấu trúc dự án như sau: Cài đặt DaisyUI DaisyUI có thể xem như một superset của TailwindCSS. Thay vì phải viết các css class dài, DaisyUI tạo nên các class lớn và cho phép tái sử dụng một cách thống nhất. Thêm DaisyUI và tailwind.config.ts: Ngoài ra chúng ta cũng sẽ refactor lại các tổ chức các file css vào thư mục styles. Xoá file tailwind.css, cập nhật app/root.ts, và thêm styles/index.scss với nội dung: Sử dụng font mặc định Inter. Đối với màn hình lớn 1rem = 16px, còn nếu màn hình nhỏ thì 1rem = 14px. Khởi động ứng dụng Thay thế nội dung file app/routes/_index.tsx: Chạy lệnh pnpm dev ta sẽ được giao diện như hình. Giao diện ứng dụng. Cài đặt môi trường Ứng dụng có thể chạy trên nhiều môi trường như test, staging, hoặc production. Thay vì thay đổi configs cho từng môi trường một cách thủ công, chúng ta có thể thiết lập nhận biết môi trường tự động từ đó xuất ra bộ cài đặt phù hợp với môi trường đó. Bạn có thể tái sử dụng Infura API ở Bài 3. Triển khai Smartcontract. Lưu ý các giá trị trong configs là công khai. Vì vậy, cần tránh lưu các giá trị secret ở trong configs. Sử dụng SDK Chúng ta đã triển khai SDK ở Bài 4 và sẽ sử dụng nó để đọc giá trị biến counter trong bài này. Kết quả sẽ được: Giá trị counter được load và hiển thị. Phụ lục The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0 Cập nhật bộ biên dịch mới cho scss trong vite.config.ts. Autoformat trong VSC 🎨 Prettier - Code formatter by Prettier ❓ How do you format code on save in VS Code - Stackoverflow",
+    "date": "2024-11-21T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/trien-khai-sdk",
+    "parent": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+    "title": "Triển khai SDK",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "webdev",
+      "🇻🇳"
+    ],
+    "description": "Việc gửi trực tiếp ABI cho các phòng ban ví dụ Frontend, Backend, Data Analysis để có thể tương tác với smartcontract một các thủ công sẽ dẫn đến nhiều bất tiện (Quản lý phiên bản không đồng nhất, các hàm side-effect không được chia sẻ,...). Vì vậy, việc phát triển một npm package sẽ tăng tốc quá trình hợp tác giữa các team.",
+    "content": "Triển khai SDK Việc gửi trực tiếp ABI cho các phòng ban ví dụ Frontend, Backend, Data Analysis để có thể tương tác với smartcontract một các thủ công sẽ dẫn đến nhiều bất tiện (Quản lý phiên bản không đồng nhất, các hàm side-effect không được chia sẻ,...). Vì vậy, việc phát triển một npm package sẽ tăng tốc quá trình hợp tác giữa các team. npmjs.com Cài đặt Chúng ta sẽ thiết lập file tsconfig.json để hỗ trợ cả commonjs và esmodule. commonjs giúp tương thích ngược với các phiên bản cũ, trong khi đó esmodule giúp tận dụng các cải tiến mới như tree-shaking, lazy import... Thay dòng \"main\": \"index.js\", trong package.json thành Đồng thời, thêm dist vào .gitignore. Thiết kế SDK Tạo file src/index.ts và cập nhật câu lệnh build Chạy thử pnpm build ta sẽ được: Xuất bản SDK Chạy lệnh pnpm publish --access public Lúc này ta sẽ được gói tin NPM cs01-2024. Lưu ý vì tên gói tin cs01-2024 đã được sử dụng trong ví dụ này, các bạn cần sử dụng tên khác để tránh xung đột. Để đổi tên, các bạn có thể sử giá trị name trong package.json. Phụ lục Conventional Commitment",
+    "date": "2024-11-17T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/trien-khai-smartcontract",
+    "parent": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+    "title": "Triển khai Smarcontract",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "evm",
+      "hardhat",
+      "🇻🇳"
+    ],
+    "description": "Trong các trường hợp đơn giản Remix[^1] là đủ cho quá trình triển khai on-chain. Tuy nhiên, với các contracts có giá trị đầu vào tính toán phức tạp thì ignition trong Hardhat lại phát huy điểm mạnh.",
+    "content": "Triển khai Smarcontract Trong các trường hợp đơn giản Remix[^1] là đủ cho quá trình triển khai on-chain. Tuy nhiên, với các contracts có giá trị đầu vào tính toán phức tạp thì ignition trong Hardhat lại phát huy điểm mạnh. ignition cho phép chúng ta có thể viết các kịch bản triển khai on-chain. [^1]: Remix là một webapp IDE cho phép phát triển smartcontract và khác với RemixJS. Cài đặt Cài và thêm @nomicfoundation/hardhat-ignition-viem và dotenv/config vào hardhat.config.ts. Ngoài ra ta cũng sẽ định nghĩa mạng holesky testnet. Ta có thể đăng ký miễn phí RPC tại Infura. Tạo file .env, trong đó <private_key> là ví chứa Holesky-ETH[^2] của bạn, và <api_token> là token từ infura. QUAN TRỌNG! Hãy nhớ thêm .env vào .gitignore nếu chưa. [^2]: Xin miễn phí Holesky-ETH tại Google Faucet. Kịch bản Ignition Có thể xoá module mẫu của hardhat, ignition/modules/Lock.ts. Triển khai on-chain với lệnh và quan sát kết quả Tìm hiểu các cài đặt khác ignition/module. Phụ lục Troubleshoot 💸 Kiểm tra số dư của bạn có lớn hơn 0.005 Holesky-ETH. ⚙️ Lưu ý tuỳ chọn --network holesky trong câu lệnh triển khai on-chain.",
+    "date": "2024-11-13T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/kiem-thu",
+    "parent": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+    "title": "Kiểm thử",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "hardhat",
+      "🇻🇳"
+    ],
+    "description": "Hardhat cung cấp môi trường sandbox cho phép chúng ta kiểm thử nhanh chóng contracts trong quá trình phát triển. Đồng thời, các tiện ích đi kèm với mocha giúp chúng ta có nhiều hướng tiếp cận và nhiều kịch bản kiểm thử.",
+    "content": "Kiểm thử Hardhat cung cấp môi trường sandbox cho phép chúng ta kiểm thử nhanh chóng contracts trong quá trình phát triển. Đồng thời, các tiện ích đi kèm với mocha giúp chúng ta có nhiều hướng tiếp cận và nhiều kịch bản kiểm thử. Kiểm thử Sandbox Cài đặt và thêm hardhat-chai-matchers-viem vào hardhat.config.ts Khởi tạo Fixture Có thể xoá file test mẫu của hardhat, test/Lock.ts. Trong mỗi lần test với sandbox, deployFixture sẽ là cài đặt chuẩn cho các lần test đó. Với mỗi lần gọi loadFixture(deployFixture), hệ thống sẽ tạo một snapshot cho lần test đó, qua lần test khác, hệ thống sự tự reset và tạo snapshot mới. Chạy kiểm thử với counter = 0 và owner sẽ là địa chỉ ví chính khi khởi tạo contract, Tương tác với contract Gọi increase để tăng counter lên +1. Combo emit và withArgs giúp chúng ta nghe và kiểm thử sự kiện từ contract một các gọn gàng. Lưu ý, ta phải dùng getAddress để tạo address checksum cho ví (tạo chữ hoa và chữ thường trong địa chỉ ví) trước khi so sánh. Kiểm lỗi Giả sử ta sử dụng một địa chỉ không phải owner để gọi increase, ta kỳ vọng lúc này contract sẽ cho ra lỗi. Kết quả Phụ lục Hiểu cơ chế sandbox Như đã trình bày ở trên, loadFixture(deployFixture) sẽ tạo ra một snapshot cho mỗi lần kiểm thử và reset lại cho các lần khác nhau. Để hiểu điều này ta thử thêm một kiểm thử increase one more ngay liền dưới increase Không như suy nghĩ bình thường, đã tăng lên 1 ở increase thì \"chắc\" là phải thành 2 ở increase one more. Nhưng thực ra điều này là SAI vì loadFixture(deployFixture) đã reset lại trạng thái của counter về 0. Vì vậy, increase one more trở thành một testcase không chính xác. Chú ý phiên bản chai-matcher Trong tài liệu của Hardhat, @nomicfoundation/hardhat-chai-matchers là phiên bản dành cho hardhat-ethers. Còn ở trong loạt bài này, khi đang dùng hardhat-viem, ta sẽ sử dụng hardhat-chai-matchers-viem.",
+    "date": "2024-11-09T17:00:00.000Z",
+    "children": []
+  },
+  {
+    "route": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/smartcontract-bo-dem-on-chain-voi-hardhat",
+    "parent": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+    "title": "Smartcontract: Bộ đếm on-chain với Hardhat",
+    "image": "",
+    "authors": [],
+    "tags": [
+      "web3",
+      "evm",
+      "hardhat",
+      "🇻🇳"
+    ],
+    "description": "Bạn có thể tăng tốc quá trình phát triển Web App với Javascript/NextJS, Web Server với Rust/Rocket.rs, Mobile App với Dash/Flutter, và cùng nguyên tắc đó ta có phát triển smartcontract với Solidity/Hardhat.",
+    "content": "Smartcontract: Bộ đếm on-chain với Hardhat Bạn có thể tăng tốc quá trình phát triển Web App với Javascript/NextJS, Web Server với Rust/Rocket.rs, Mobile App với Dash/Flutter, và cùng nguyên tắc đó ta có phát triển smartcontract với Solidity/Hardhat. Khởi tạo dự án Tạo folder dự án cs01 và cài đặt hardhat: Khởi tạo hardhat. Lưu ý, chúng ta phải chọn Create a TypeScript project (with Viem) và y cho tất cả các cài đặt còn lại. Sau khi hoàn tất, ta được cấu trúc thư mục như bên dưới: Trong đó hardhat.config.ts là cài đặt Hardhat, thư mục contracts chứa code solidity, thư mục ignition chứa scripts triển khai contracts, và thư mục test để kiểm thử contracts. Chạy thử lệnh npx hardhat compile, Quan hệ giữa Smartcontract, Solidity, và ABI Bạn sẽ phát triển smartcontract bằng Solidity và biên dịch ra mã máy bằng Solidity Compiler. Blockchain sẽ lưu trữ và thực thi mã máy này. Tuy nhiên để tương tác với smartcontract thông qua các ngôn ngữ lập trình như Javascript, Python,... chúng ta cần định nghĩa lại interface của contract một cách thủ công. Điều này được chuẩn hoá bởi Solidity Compiler bằng cách tạo ra một sản phẩm phụ mang tên ABI (Application Binary Interface) trong quá trình biên dịch. Với ABI, các ngôn ngữ lập trình có thể nhanh chóng hiểu và tương tác với smartcontract. Sản phẩm của Solidity Compiler. Nguồn ảnh: https://medium.com/coinmonks/smart-contract-and-its-compilation-process-34868abccb69 Bộ đếm on-chain Có thể xoá contracts mẫu của hardhat, contracts/Lock.sol. Chúng ta sẽ viết một smartcontract đơn giản với biến counter được khởi tạo bằng 0 và một hàm increase để tăng +1 cho mỗi lần gọi. Đối với hàm increase, ta chỉ cho phép owner truy cập và emit một sự kiện Increase cho mỗi lần gọi thành công. Đối với logic contract đã được chuẩn hoá cao như Ownership, token ERC20, thư viện toán MathSafe,... thay vì phải viết lại cho mỗi lần phát triển dự án, sẽ an toàn hơn khi ta sử dụng @openzeppelin/contracts. @openzeppelin/contracts là một tập hợp các contracts mẫu mực đã được kiểm thử và nâng cấp nhiều lần từ cộng đồng cũng như các công ty đầu ngành. Hiện nay, các contracts phổ biến trong @openzeppelin/contracts có độ tin cậy và an toàn cao. Với contract Counter.sol bên trên, ta kế thừa lại login của Ownable.sol. Điều này cho phép ta có thể quản lý chủ của (owner) contract và thiết lập quyền cho các hàm mong muốn (ví dụ như increase). ABI Nếu chạy thử pnpm build ta sẽ nhận ra một thư mục artifacts chứa các sản phẩm bytecode và abi. Vì ABI sẽ được tái sử dụng nhiều và cho cả SDK, chúng ta nên cần một thư mục riêng để chứa các ABI này. Thêm cài đặt cho hardhat.config.ts, Thiết lập các câu lệnh làm việc Trong scrips của package.json, thay (hoặc thêm mới) 2 lệnh build và test. Chạy thử lệnh build, Đồng thời, ta sẽ được folder abi chứa tất cả các ABI cần thiết. Lưu ý, vì abi là sản phẩm của quá trình build nên hãy thêm nó vào .gitignore. Phụ lục Tại sao chúng ta phải tạo các file ts cho ABI? Để viem có thể suy diễn được interface của contract, viem cần const assertion. Đó là lý do tại sao ta có as const ở cuối các file ts cho ABI. Các bạn có thể bắt gặp công dụng của nó ở bài Triển khai SDK. VSC Plugins 🪖 Solidity by Nomic Foundation 🎨 Prettier - Code formatter by Prettier Autoformat trong VSC ❓ How do you format code on save in VS Code - Stackoverflow",
+    "date": "2024-11-05T17:00:00.000Z",
     "children": []
   },
   {
@@ -204,7 +359,10 @@
     "parent": "/blog",
     "title": "Schnorr's Procotol Cheatsheet",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "cryptography",
       "math"
@@ -219,7 +377,10 @@
     "parent": "/blog",
     "title": "Leveraging Dutch Auctions for Efficient Onchain Market",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "web3",
       "mba"
@@ -234,7 +395,10 @@
     "parent": "/blog",
     "title": "Fast Fourier Transform in Efficient Polynomial Multiplication",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "math",
       "cryptography"
@@ -249,7 +413,10 @@
     "parent": "/blog",
     "title": "Merkle Trie: The Definition and Applications",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "cryptography",
       "web3",
@@ -283,7 +450,10 @@
     "parent": "/blog",
     "title": "Debug a Smartcontract in Hardhat",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "web3",
       "evm",
@@ -299,7 +469,10 @@
     "parent": "/blog",
     "title": "Zoom out the Ethereum's Storage Layout",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "web3",
       "evm"
@@ -316,7 +489,9 @@
     "parent": "/blog/zoom-out-the-ethereums-storage-layout",
     "title": "Giải mã bố cục dữ liệu của Ethereum",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "web3",
       "evm",
@@ -332,7 +507,10 @@
     "parent": "/blog",
     "title": "Chuyện cắt tóc",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "tản văn",
       "🇻🇳"
@@ -347,7 +525,10 @@
     "parent": "/blog",
     "title": "Wrapped Native Token",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "evm",
       "hardhat",
@@ -381,7 +562,10 @@
     "parent": "/blog",
     "title": "Contract Factory: The Solidity Pattern and Facts",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "web3",
       "evm"
@@ -396,7 +580,10 @@
     "parent": "/blog",
     "title": "Khả dụng dữ liệu (Data Availability) để làm gì?",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "web3",
       "evm",
@@ -412,7 +599,10 @@
     "parent": "/blog",
     "title": "A tidy role model in Scrum",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "agile",
       "mba"
@@ -429,7 +619,9 @@
     "parent": "/blog/a-tidy-role-model-in-scrum",
     "title": "Khung nhân sự cơ bản cho Scrum",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan"
+    ],
     "tags": [
       "agile",
       "mba",
@@ -445,7 +637,10 @@
     "parent": "/blog",
     "title": "How to export ABI in Hardhat?",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "web3",
       "evm",
@@ -461,7 +656,11 @@
     "parent": "/blog",
     "title": "Common pitfalls for Web3 founders",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn",
+      "Tu Phan NE"
+    ],
     "tags": [
       "mba"
     ],
@@ -475,7 +674,10 @@
     "parent": "/blog",
     "title": "Bức thư tình đầu tiên",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "tản văn",
       "🇻🇳"
@@ -490,7 +692,10 @@
     "parent": "/blog",
     "title": "Account Abstraction in Nutshell",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "web3",
       "evm"
@@ -505,7 +710,10 @@
     "parent": "/blog",
     "title": "Bài toán nhà tỷ phú",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "cryptography",
       "math",
@@ -521,7 +729,10 @@
     "parent": "/blog",
     "title": "Nhớ lắm La Hai",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "tản văn",
       "🇻🇳"
@@ -536,7 +747,10 @@
     "parent": "/blog",
     "title": "Chuyện Messi rời Barca",
     "image": "",
-    "authors": [],
+    "authors": [
+      "Tu Phan",
+      "tuphan-dn"
+    ],
     "tags": [
       "tản văn",
       "🇻🇳"

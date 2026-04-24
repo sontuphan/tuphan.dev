@@ -217,6 +217,8 @@ async function migrate() {
     table.forEach((doc) => this.add(doc))
   })
   writeFileSync(INDEX_DIR, JSON.stringify(document, null, 2))
+
+  console.log('🎉 Migration done!')
 }
 
 migrate()

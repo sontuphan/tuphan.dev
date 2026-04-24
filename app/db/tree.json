@@ -23,6 +23,47 @@
       "children": []
     },
     {
+      "path": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum",
+      "file": "app/routes/blog.cs01-du-an-chuan-cong-nghiep-tren-ethereum/route.md",
+      "children": [
+        {
+          "path": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/smartcontract-bo-dem-on-chain-voi-hardhat",
+          "file": "app/routes/blog.cs01-du-an-chuan-cong-nghiep-tren-ethereum.smartcontract-bo-dem-on-chain-voi-hardhat/route.md",
+          "children": []
+        },
+        {
+          "path": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/trien-khai-smartcontract",
+          "file": "app/routes/blog.cs01-du-an-chuan-cong-nghiep-tren-ethereum.trien-khai-smartcontract/route.md",
+          "children": []
+        },
+        {
+          "path": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/devops-va-ha-tang",
+          "file": "app/routes/blog.cs01-du-an-chuan-cong-nghiep-tren-ethereum.devops-va-ha-tang/route.md",
+          "children": []
+        },
+        {
+          "path": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/giao-dien-dapp",
+          "file": "app/routes/blog.cs01-du-an-chuan-cong-nghiep-tren-ethereum.giao-dien-dapp/route.md",
+          "children": []
+        },
+        {
+          "path": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/trien-khai-sdk",
+          "file": "app/routes/blog.cs01-du-an-chuan-cong-nghiep-tren-ethereum.trien-khai-sdk/route.md",
+          "children": []
+        },
+        {
+          "path": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/ket-noi-vi",
+          "file": "app/routes/blog.cs01-du-an-chuan-cong-nghiep-tren-ethereum.ket-noi-vi/route.md",
+          "children": []
+        },
+        {
+          "path": "/blog/cs01-du-an-chuan-cong-nghiep-tren-ethereum/kiem-thu",
+          "file": "app/routes/blog.cs01-du-an-chuan-cong-nghiep-tren-ethereum.kiem-thu/route.md",
+          "children": []
+        }
+      ]
+    },
+    {
       "path": "/blog/chiec-be-cua-bam-chap-thay-thich-minh-tue",
       "file": "app/routes/blog.chiec-be-cua-bam-chap-thay-thich-minh-tue/route.md",
       "children": []
